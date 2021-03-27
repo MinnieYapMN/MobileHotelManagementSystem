@@ -12,20 +12,23 @@
         android:layout_height="783dp"
         android:tint="#31FFFFFF"
         app:srcCompat="@drawable/main"
-        tools:layout_editor_absoluteX="-180dp"
-        tools:layout_editor_absoluteY="-36dp" />
+        tools:layout_editor_absoluteX="-162dp"
+        tools:layout_editor_absoluteY="-96dp" />
 
     <Button
         android:id="@+id/button5"
         android:layout_width="160dp"
         android:layout_height="135dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginLeft="59dp"
         android:layout_marginTop="80dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginRight="12dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
         android:layout_marginBottom="220dp"
         android:text="Room Information"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button4"
         app:layout_constraintTop_toBottomOf="@+id/button12"
         app:layout_constraintVertical_bias="0.085" />
 
@@ -53,8 +56,10 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:text="SPA Services"
+        app:layout_constraintBottom_toTopOf="@+id/button5"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/button2"
@@ -66,10 +71,12 @@
         android:layout_marginEnd="30dp"
         android:layout_marginRight="30dp"
         android:text="Housekeeping"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
         app:layout_constraintEnd_toStartOf="@+id/button12"
         app:layout_constraintHorizontal_bias="0.463"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
