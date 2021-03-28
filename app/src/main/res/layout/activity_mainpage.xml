@@ -7,76 +7,72 @@
     tools:context=".mainpage">
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="734dp"
-        android:layout_height="783dp"
-        android:tint="#31FFFFFF"
-        app:srcCompat="@drawable/main"
-        tools:layout_editor_absoluteX="-162dp"
-        tools:layout_editor_absoluteY="-96dp" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="160dp"
-        android:layout_height="135dp"
-        android:layout_marginStart="59dp"
-        android:layout_marginLeft="59dp"
-        android:layout_marginTop="80dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="220dp"
-        android:text="Room Information"
+        android:id="@+id/imageView5"
+        android:layout_width="430dp"
+        android:layout_height="689dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:tint="#1BFFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button4"
-        app:layout_constraintTop_toBottomOf="@+id/button12"
-        app:layout_constraintVertical_bias="0.085" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="160dp"
-        android:layout_height="135dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="80dp"
-        android:layout_marginBottom="220dp"
-        android:text="Room Services"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button5"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button10"
-        app:layout_constraintVertical_bias="0.076" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="170dp"
-        android:layout_height="133dp"
-        android:layout_marginTop="184dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:text="SPA Services"
-        app:layout_constraintBottom_toTopOf="@+id/button5"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:srcCompat="@drawable/main" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="160dp"
-        android:layout_height="135dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="184dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginRight="30dp"
-        android:text="Housekeeping"
+        android:layout_width="208dp"
+        android:layout_height="139dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Room Reservation"
+        android:textColor="#FFA722"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="212dp"
+        android:layout_height="131dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="ROOM SERVICES"
+        android:textColor="#FFEB3B"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/button4"
-        app:layout_constraintEnd_toStartOf="@+id/button12"
-        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.431"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="203dp"
+        android:layout_height="136dp"
+        android:layout_marginBottom="120dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="monospace"
+        android:text="MAIN PAGE"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
