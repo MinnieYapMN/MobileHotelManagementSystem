@@ -36,6 +36,8 @@
         android:layout_marginTop="71dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
         android:text="UserName :"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -50,10 +52,10 @@
         android:text="Password :"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
-        app:layout_constraintVertical_bias="0.218" />
+        app:layout_constraintVertical_bias="0.111" />
 
     <Button
         android:id="@+id/button7"
