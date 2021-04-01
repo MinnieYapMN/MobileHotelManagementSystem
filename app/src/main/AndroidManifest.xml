@@ -9,10 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MobileHotelManagementSystem">
-        <activity
-            android:name=".Payment"
-            android:label="@string/title_activity_payment"
-            android:theme="@style/Theme.MobileHotelManagementSystem.NoActionBar"></activity>
+        <activity android:name=".staffmaintenance"></activity>
+        <activity android:name=".roommanagement" />
+        <activity android:name=".roomdetails" />
+        <activity android:name=".availableroom" />
         <activity android:name=".room_services" />
         <activity android:name=".mainpage" />
         <activity android:name=".loginpage" />
