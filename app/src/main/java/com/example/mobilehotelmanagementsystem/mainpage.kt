@@ -21,7 +21,22 @@ class mainpage : AppCompatActivity() {
         startActivity(intent)
     }
 
+    fun roomMaintian(view: View) {
+        val greeting = "Room Maintenance"
 
+        val intent = Intent(this, roommanagement::class.java).apply {
+            putExtra(AlarmClock.EXTRA_MESSAGE, greeting)
+        }
+        startActivity(intent)
+    }
 
+    fun staffMaintain(view: View) {
+        val greeting = "Staff Maintenance"
+
+        val intent = Intent(this, staffmaintenance::class.java).apply {
+            putExtra(AlarmClock.EXTRA_MESSAGE, greeting)
+        }
+        startActivity(intent)
+    }
 
 }
