@@ -11,12 +11,17 @@ class mainpage : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_mainpage)
     }
-    fun roomServices(view : View){
+
+    fun roomServices(view: View) {
         val greeting = "Room Services"
 
         val intent = Intent(this, room_services::class.java).apply {
-            putExtra(AlarmClock.EXTRA_MESSAGE,greeting)
+            putExtra(AlarmClock.EXTRA_MESSAGE, greeting)
         }
         startActivity(intent)
     }
+
+
+
+
 }
