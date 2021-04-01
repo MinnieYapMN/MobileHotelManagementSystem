@@ -67,17 +67,20 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
 
     <CheckBox
-        android:id="@+id/checkBox3"
-        android:layout_width="258dp"
-        android:layout_height="69dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginLeft="48dp"
-        android:layout_marginTop="10dp"
-        android:text="Dry cleaning and laundry"
-        android:textAllCaps="false"
+        android:id="@+id/checkBox2"
+        android:layout_width="161dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:text="SPA Services"
         android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox4" />
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/checkBox"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
 
     <CheckBox
         android:id="@+id/checkBox4"
@@ -93,20 +96,17 @@
         app:layout_constraintTop_toBottomOf="@+id/checkBox" />
 
     <CheckBox
-        android:id="@+id/checkBox2"
-        android:layout_width="161dp"
+        android:id="@+id/checkBox3"
+        android:layout_width="300dp"
         android:layout_height="74dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="44dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginRight="40dp"
-        android:text="SPA Services"
-        android:textSize="20sp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="10dp"
+        android:text="Dry cleaning and laundry"
         android:textAllCaps="false"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/checkBox"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox4" />
 
     <Button
         android:id="@+id/button5"
