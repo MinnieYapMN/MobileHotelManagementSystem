@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Reservation2">
+
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="24dp"
+        android:text="BACK"
+        app:backgroundTint="#483A33"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="428dp"
+        android:layout_height="691dp"
+        android:adjustViewBounds="false"
+        android:alpha="0.6"
+        android:background="#F1EEEE"
+        android:cropToPadding="false"
+        android:rotationY="0"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button13"
+        app:layout_constraintTop_toStartOf="@+id/imageView"
+        app:srcCompat="@drawable/rroom" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="178dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="604dp"
+        android:fontFamily="sans-serif"
+        android:lineSpacingExtra="10sp"
+        android:text="RESERVATION"
+        android:textAllCaps="true"
+        android:textColor="#100F0F"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView16"
+        app:layout_constraintEnd_toEndOf="@+id/imageView16"
+        app:layout_constraintHorizontal_bias="0.543"
+        app:layout_constraintStart_toStartOf="@+id/imageView16" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Room Information"
+        android:textColor="#131212"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="163dp" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Room Number:"
+        android:textColor="#232121"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="208dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="232dp" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Room Type:"
+        android:textColor="#151313"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="292dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="316dp" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check In Date:"
+        android:textColor="#221D1D"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="374dp" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="398dp" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No. of Adult:"
+        android:textColor="#191717"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="450dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="474dp" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No. of Children"
+        android:textColor="#1E1C1C"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="534dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="558dp" />
+
+    <Button
+        android:id="@+id/button16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#483A33"
+        android:text="DONE"
+        app:backgroundTint="#483A33"
+        tools:layout_editor_absoluteX="323dp"
+        tools:layout_editor_absoluteY="683dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

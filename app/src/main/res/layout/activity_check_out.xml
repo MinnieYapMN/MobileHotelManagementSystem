@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckOut">
+
+    <Button
+        android:id="@+id/button23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="18dp"
+        android:text="BACK"
+        app:backgroundTint="#483A33"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="326dp"
+        android:layout_height="197dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="418dp"
+        android:layout_height="470dp"
+        android:adjustViewBounds="false"
+        android:alpha="0.6"
+        android:background="#F1EEEE"
+        android:cropToPadding="false"
+        android:rotationY="0"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView20"
+        app:srcCompat="@drawable/clobby"/>
+
+    <TextView
+        android:id="@+id/textView48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHECK OUT"
+        android:textColor="#1C1A1A"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="169dp"
+        tools:layout_editor_absoluteY="280dp" />
+
+    <TextView
+        android:id="@+id/textView49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guest Information"
+        android:textColor="#1C1A1A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="316dp" />
+
+    <TextView
+        android:id="@+id/textView50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Room Number:"
+        android:textColor="#393535"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="363dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="391dp" />
+
+    <TextView
+        android:id="@+id/textView52"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:textColor="#020202"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="444dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteY="472dp" />
+
+    <TextView
+        android:id="@+id/textView53"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check Out Date:"
+        android:textColor="#201F1F"
+        android:textIsSelectable="false"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="528dp" />
+
+    <EditText
+        android:id="@+id/editTextDate3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteY="553dp" />
+
+    <Button
+        android:id="@+id/button24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        app:backgroundTint="#483A33"
+        tools:layout_editor_absoluteX="301dp"
+        tools:layout_editor_absoluteY="664dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
