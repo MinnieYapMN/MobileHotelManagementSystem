@@ -5,29 +5,36 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".loginpage">
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        style="al"
+        android:layout_width="414dp"
+        android:layout_height="70dp"
+        android:background="#483A33"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:lineSpacingExtra="8sp"
+        android:text="               Main Page"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#F7F9FA"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:verticalScrollbarPosition="defaultPosition"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="0dp" />
+
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="326dp"
         android:layout_height="197dp"
-        android:layout_marginBottom="5dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        android:layout_marginTop="1dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3"
         app:srcCompat="@drawable/logo" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="404dp"
-        android:layout_height="418dp"
-        android:layout_marginTop="5dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.428"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:srcCompat="@drawable/images" />
 
     <EditText
         android:id="@+id/editTextTextPersonName"
@@ -64,6 +71,7 @@
         android:layout_marginTop="10dp"
         android:onClick="next"
         android:text="LOGIN"
+        app:backgroundTint="#A88462"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

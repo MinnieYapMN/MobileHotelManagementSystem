@@ -6,32 +6,24 @@
     android:layout_height="match_parent"
     tools:context=".room_services">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="424dp"
-        android:layout_height="766dp"
-        android:tint="#45FFFCFC"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/roomservices" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="209dp"
-        android:layout_height="64dp"
-        android:layout_marginTop="100dp"
-        android:fontFamily="cursive"
-        android:text="Room Services"
-        android:textAllCaps="false"
-        android:textColor="#000000"
-        android:textSize="36sp"
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        style="al"
+        android:layout_width="414dp"
+        android:layout_height="70dp"
+        android:background="#483A33"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:lineSpacingExtra="8sp"
+        android:text="       Room Services Page"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#F7F9FA"
+        android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+        android:typeface="serif"
+        android:verticalScrollbarPosition="defaultPosition"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="0dp" />
 
     <EditText
         android:id="@+id/editTextTextPersonName2"
@@ -39,7 +31,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="10dp"
         android:layout_marginRight="10dp"
         android:ems="10"
@@ -51,7 +43,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
 
     <CheckBox
         android:id="@+id/checkBox"
@@ -99,9 +91,9 @@
         android:id="@+id/checkBox3"
         android:layout_width="300dp"
         android:layout_height="74dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginLeft="48dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="16dp"
         android:text="Dry cleaning and laundry"
         android:textAllCaps="false"
         android:textSize="20sp"
@@ -115,11 +107,25 @@
         android:layout_marginTop="40dp"
         android:onClick="confirm"
         android:text="Confirm"
+        app:backgroundTint="#A88462"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.874"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkBox3"
         app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="323dp"
+        android:layout_marginRight="323dp"
+        android:onClick="back"
+        android:text="Back"
+        app:backgroundTint="#A88462"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -19,24 +19,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView16"
-        android:layout_width="428dp"
-        android:layout_height="691dp"
-        android:adjustViewBounds="false"
-        android:alpha="0.6"
-        android:background="#F1EEEE"
-        android:cropToPadding="false"
-        android:rotationY="0"
-        android:scaleType="fitXY"
-        app:layout_constraintBottom_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button13"
-        app:layout_constraintTop_toStartOf="@+id/imageView"
-        app:srcCompat="@drawable/rroom" />
-
     <TextView
         android:id="@+id/textView19"
         android:layout_width="178dp"
