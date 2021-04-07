@@ -12,8 +12,12 @@ class Payment : AppCompatActivity() {
         setContentView(R.layout.activity_payment)
     }
     fun back(view : View){
+        val greeting = "Back To Main Page"
+
         val intent2 = Intent(this, mainpage::class.java).apply {
+            putExtra(AlarmClock.EXTRA_MESSAGE,greeting)
         }
         startActivity(intent2)
     }
+
 }

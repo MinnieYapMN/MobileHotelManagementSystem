@@ -13,6 +13,7 @@
         android:layout_marginStart="15dp"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="18dp"
+        android:onClick="back"
         android:text="BACK"
         app:backgroundTint="#483A33"
         app:layout_constraintStart_toStartOf="parent"
@@ -128,9 +129,10 @@
         android:id="@+id/button24"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="submit"
         android:text="Submit"
         app:backgroundTint="#483A33"
-        tools:layout_editor_absoluteX="301dp"
-        tools:layout_editor_absoluteY="664dp" />
+        tools:layout_editor_absoluteX="306dp"
+        tools:layout_editor_absoluteY="667dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

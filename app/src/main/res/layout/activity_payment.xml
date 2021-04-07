@@ -34,6 +34,25 @@
         app:layout_constraintVertical_bias="0.501"
         app:srcCompat="@drawable/reception" />
 
+    <EditText
+        android:id="@+id/editTextTextPersonName36"
+        style="al"
+        android:layout_width="414dp"
+        android:layout_height="70dp"
+        android:background="#483A33"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:lineSpacingExtra="8sp"
+        android:text="                   Payment"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#F7F9FA"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:verticalScrollbarPosition="defaultPosition"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="0dp" />
+
     <TextView
         android:id="@+id/textView15"
         android:layout_width="111dp"
