@@ -11,10 +11,11 @@ class mainpage : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_mainpage)
     }
-    fun roomReserve(view: View) {
+
+    fun roomReserve(view: View){
         val greeting = "Room Reservation"
 
-        val intent = Intent(this, reservation::class.java).apply {
+        val intent = Intent(this, room_services::class.java).apply {
             putExtra(AlarmClock.EXTRA_MESSAGE, greeting)
         }
         startActivity(intent)

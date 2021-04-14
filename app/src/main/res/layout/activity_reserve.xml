@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ScrollView 
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -11,10 +11,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="40dp"
-        tools:context=".CheckIn">
+        tools:context=".reserve">
+
 
         <Button
-            android:id="@+id/button10"
+            android:id="@+id/button26"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="4dp"
@@ -26,82 +27,83 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:id="@+id/imageView4"
+            android:id="@+id/imageView2"
             android:layout_width="326dp"
             android:layout_height="197dp"
             android:layout_marginStart="4dp"
             android:layout_marginLeft="4dp"
             android:layout_marginTop="22dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button10"
+            app:layout_constraintTop_toBottomOf="@+id/button26"
             app:srcCompat="@drawable/logo" />
 
         <TextView
-            android:id="@+id/textView16"
+            android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="108dp"
-            android:layout_marginLeft="108dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
             android:layout_marginTop="16dp"
-            android:text="CHECK IN"
-            android:textColor="#252525"
+            android:text="RESERVATION"
+            android:textColor="#1C1B1B"
             android:textSize="22sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
         <TextView
-            android:id="@+id/textView19"
+            android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="20dp"
             android:text="Guest Information"
-            android:textColor="#191717"
+            android:textColor="#221F1F"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView16" />
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
 
         <TextView
-            android:id="@+id/textView21"
+            android:id="@+id/textView47"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
-            android:text="Name :"
-            android:textColor="#232121"
+            android:text="Name : "
+            android:textColor="#1E1B1B"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView19" />
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName16"
+            android:id="@+id/editTextTextPersonName37"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
             android:ems="10"
             android:inputType="textPersonName"
+            android:text="Name"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView21" />
+            app:layout_constraintTop_toBottomOf="@+id/textView47" />
 
         <TextView
-            android:id="@+id/textView28"
+            android:id="@+id/textView51"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
             android:text="Phone Number :"
-            android:textColor="#2E2C2C"
+            android:textColor="#0C0C0C"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName16" />
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName37" />
 
         <EditText
-            android:id="@+id/editTextPhone"
+            android:id="@+id/editTextPhone3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -109,37 +111,37 @@
             android:ems="10"
             android:inputType="phone"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView28" />
+            app:layout_constraintTop_toBottomOf="@+id/textView51" />
 
         <TextView
-            android:id="@+id/textView29"
+            android:id="@+id/textView54"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="24dp"
             android:text="Room Information"
-            android:textColor="#252121"
+            android:textColor="#1C1919"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+            app:layout_constraintTop_toBottomOf="@+id/editTextPhone3" />
 
         <TextView
-            android:id="@+id/textView30"
+            android:id="@+id/textView55"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
             android:text="Room Number"
-            android:textColor="#2B2626"
+            android:textColor="#191717"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView29" />
+            app:layout_constraintTop_toBottomOf="@+id/textView54" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName18"
+            android:id="@+id/editTextTextPersonName38"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -147,23 +149,23 @@
             android:ems="10"
             android:inputType="textPersonName"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView30" />
+            app:layout_constraintTop_toBottomOf="@+id/textView55" />
 
         <TextView
-            android:id="@+id/textView31"
+            android:id="@+id/textView56"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
             android:text="Room Type"
-            android:textColor="#171515"
+            android:textColor="#100F0F"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName18" />
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName38" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName19"
+            android:id="@+id/editTextTextPersonName39"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -171,23 +173,47 @@
             android:ems="10"
             android:inputType="textPersonName"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView31" />
+            app:layout_constraintTop_toBottomOf="@+id/textView56" />
 
         <TextView
-            android:id="@+id/textView32"
+            android:id="@+id/textView57"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Check In Date"
+            android:textColor="#0E0D0D"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName39" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView57" />
+
+        <TextView
+            android:id="@+id/textView58"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
             android:text="No. of Adult"
-            android:textColor="#201D1D"
+            android:textColor="#231F1F"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName19" />
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName40" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName27"
+            android:id="@+id/editTextTextPersonName41"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -195,23 +221,23 @@
             android:ems="10"
             android:inputType="textPersonName"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView32" />
+            app:layout_constraintTop_toBottomOf="@+id/textView58" />
 
         <TextView
-            android:id="@+id/textView33"
+            android:id="@+id/textView59"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
             android:text="No. of Children"
-            android:textColor="#151414"
+            android:textColor="#333030"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName27" />
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName41" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName28"
+            android:id="@+id/editTextTextPersonName42"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -219,19 +245,20 @@
             android:ems="10"
             android:inputType="textPersonName"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView33" />
+            app:layout_constraintTop_toBottomOf="@+id/textView59" />
 
         <Button
-            android:id="@+id/button11"
+            android:id="@+id/button27"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="244dp"
             android:layout_marginLeft="244dp"
-            android:layout_marginTop="700dp"
-            android:text="Button"
+            android:layout_marginTop="756dp"
+            android:text="NEXT"
             app:backgroundTint="#483A33"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-    
+
 </ScrollView>
+

@@ -9,9 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MobileHotelManagementSystem">
-        <activity android:name=".CheckOut"></activity>
+        <activity android:name=".CheckIn"></activity>
+        <activity android:name=".reserve" />
+        <activity android:name=".CheckOut" />
         <activity android:name=".CheckIn2" />
-        <activity android:name=".CheckIn" />
         <activity android:name=".Reservation2" />
         <activity android:name=".reservation" />
         <activity android:name=".staffmaintenance" />

@@ -31,108 +31,117 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo" />
 
-    <ImageView
-        android:id="@+id/imageView18"
-        android:layout_width="418dp"
-        android:layout_height="470dp"
-        android:adjustViewBounds="false"
-        android:alpha="0.6"
-        android:background="#F1EEEE"
-        android:cropToPadding="false"
-        android:rotationY="0"
-        android:scaleType="fitXY"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView20"
-        app:srcCompat="@drawable/clobby"/>
-
     <TextView
         android:id="@+id/textView48"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="133dp"
+        android:layout_marginLeft="133dp"
+        android:layout_marginTop="14dp"
         android:text="CHECK OUT"
         android:textColor="#1C1A1A"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="169dp"
-        tools:layout_editor_absoluteY="280dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView20" />
 
     <TextView
         android:id="@+id/textView49"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="13dp"
         android:text="Guest Information"
         android:textColor="#1C1A1A"
         android:textSize="20sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="316dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView48" />
 
     <TextView
         android:id="@+id/textView50"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="25dp"
         android:text="Room Number:"
         android:textColor="#393535"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="363dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView49" />
 
     <EditText
         android:id="@+id/editTextTextPersonName34"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
         android:ems="10"
         android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="58dp"
-        tools:layout_editor_absoluteY="391dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView50" />
 
     <TextView
         android:id="@+id/textView52"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="16dp"
         android:text="Name:"
         android:textColor="#020202"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="444dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName34" />
 
     <EditText
         android:id="@+id/editTextTextPersonName35"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
         android:ems="10"
         android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="60dp"
-        tools:layout_editor_absoluteY="472dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView52" />
 
     <TextView
         android:id="@+id/textView53"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="16dp"
         android:text="Check Out Date:"
         android:textColor="#201F1F"
         android:textIsSelectable="false"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="528dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName35" />
 
     <EditText
         android:id="@+id/editTextDate3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
         android:ems="10"
         android:inputType="date"
-        tools:layout_editor_absoluteX="60dp"
-        tools:layout_editor_absoluteY="553dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView53" />
 
     <Button
         android:id="@+id/button24"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="292dp"
+        android:layout_marginLeft="292dp"
+        android:layout_marginTop="388dp"
         android:onClick="submit"
         android:text="Submit"
         app:backgroundTint="#483A33"
-        tools:layout_editor_absoluteX="306dp"
-        tools:layout_editor_absoluteY="667dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView20" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
