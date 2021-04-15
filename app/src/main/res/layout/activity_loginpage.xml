@@ -2,9 +2,11 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/txtUsername"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".loginpage">
+
     <EditText
         android:id="@+id/editTextTextPersonName3"
         style="al"
@@ -37,21 +39,21 @@
         app:srcCompat="@drawable/logo" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/txtName"
         android:layout_width="272dp"
         android:layout_height="91dp"
         android:layout_marginTop="71dp"
         android:ems="10"
-        android:inputType="textPersonName"
         android:fontFamily="monospace"
+        android:hint="UserName :"
+        android:inputType="textPersonName"
         android:textStyle="bold"
-        android:text="UserName :"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/txtPassword"
         android:layout_width="268dp"
         android:layout_height="86dp"
         android:ems="10"
@@ -61,11 +63,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/txtName"
         app:layout_constraintVertical_bias="0.111" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/btnLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -75,7 +77,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+        app:layout_constraintTop_toBottomOf="@+id/txtPassword"
         app:layout_constraintVertical_bias="0.089" />
 
 

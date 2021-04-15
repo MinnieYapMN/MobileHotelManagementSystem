@@ -6,19 +6,27 @@ import android.os.Bundle
 import android.provider.AlarmClock
 import android.view.View
 import android.widget.*
-import java.time.temporal.TemporalAdjusters.next
+import com.google.firebase.database.FirebaseDatabase
 
-class loginpage : AppCompatActivity() {
+class loginpage : AppCompatActivity(){
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_loginpage)
 
+        var database = FirebaseDatabase.getInstance().reference
+
+        btnLogin.se{
+            var Username = EditText.text.toString()
+            var txtPassword = EditText.text.toString().toInt()
+
+        }
     }
 
     fun next(view: View) {
-        var et_user_name = findViewById(R.id.editTextTextPersonName) as EditText
-        var et_password = findViewById(R.id.editTextTextPassword) as EditText
-        var btn_submit = findViewById(R.id.button7) as Button
+        var et_user_name = findViewById(R.id.txtName) as EditText
+        var et_password = findViewById(R.id.txtPassword) as EditText
+        var btn_submit = findViewById(R.id.btnLogin) as Button
 
         val user_name = et_user_name.text;
         val password = et_password.text;
