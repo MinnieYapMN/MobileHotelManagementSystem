@@ -19,7 +19,7 @@
         <activity android:name=".roommanagement" />
         <activity android:name=".roomdetails" />
         <activity android:name=".availableroom" />
-        <activity android:name=".room_services" />
+        <activity android:name=".roomservices" />
         <activity android:name=".mainpage" />
         <activity android:name=".loginpage" />
         <activity android:name=".MainActivity">

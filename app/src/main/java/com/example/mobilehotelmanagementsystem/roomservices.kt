@@ -11,7 +11,7 @@ import android.widget.EditText
 import android.widget.Toast
 import com.google.firebase.database.FirebaseDatabase
 
-class room_services : AppCompatActivity() {
+class roomservices : AppCompatActivity() {
 
     lateinit var txtRoom: EditText
     lateinit var checkBox: CheckBox
@@ -50,11 +50,11 @@ class room_services : AppCompatActivity() {
         val ref = FirebaseDatabase.getInstance().getReference("heroes")
         val heroId = ref.push().key
 
-        val hero = Hero(heroId,num)
+       // val hero = Hero(heroId,num)
 
-        ref.child(heroId).setValue(hero).addOnCompleteListener {
-          Toast.makeText(applicationContext,"Saved Successfully!",Toast.LENGTH_LONG).show()
-        }
+        //ref.child(heroId).setValue(hero).addOnCompleteListener {
+       //   Toast.makeText(applicationContext,"Saved Successfully!",Toast.LENGTH_LONG).show()
+       // }
     }
 
 

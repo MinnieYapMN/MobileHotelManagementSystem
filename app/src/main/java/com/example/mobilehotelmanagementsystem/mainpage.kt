@@ -15,7 +15,7 @@ class mainpage : AppCompatActivity() {
     fun roomReserve(view: View){
         val greeting = "Room Reservation"
 
-        val intent = Intent(this, room_services::class.java).apply {
+        val intent = Intent(this, roomservices::class.java).apply {
             putExtra(AlarmClock.EXTRA_MESSAGE, greeting)
         }
         startActivity(intent)
@@ -24,7 +24,7 @@ class mainpage : AppCompatActivity() {
     fun roomServices(view: View) {
         val greeting = "Room Services"
 
-        val intent = Intent(this, room_services::class.java).apply {
+        val intent = Intent(this, roomservices::class.java).apply {
             putExtra(AlarmClock.EXTRA_MESSAGE, greeting)
         }
         startActivity(intent)
