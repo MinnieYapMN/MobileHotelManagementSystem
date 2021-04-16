@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.provider.AlarmClock
 import android.view.View
 import android.widget.Toast
+import com.google.firebase.auth.FirebaseAuth
 
 class mainpage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -50,6 +51,7 @@ class mainpage : AppCompatActivity() {
     }
 
     fun LogOut(view: View) {
+        FirebaseAuth.getInstance().signOut();
         Toast.makeText(this, "Logout.", Toast.LENGTH_LONG).show()
         startActivity(Intent(this,MainActivity::class.java))
         finish()
