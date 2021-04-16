@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".loginpage">
+    tools:context=".SignUp">
 
     <EditText
         android:id="@+id/editTextTextPersonName3"
@@ -15,7 +15,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:lineSpacingExtra="8sp"
-        android:text="               Main Page"
+        android:text="             Sign Up Page"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#F7F9FA"
         android:textSize="30sp"
@@ -24,8 +24,6 @@
         android:verticalScrollbarPosition="defaultPosition"
         tools:layout_editor_absoluteX="-2dp"
         tools:layout_editor_absoluteY="0dp" />
-
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="326dp"
@@ -41,13 +39,14 @@
         android:id="@+id/et_email"
         android:layout_width="272dp"
         android:layout_height="91dp"
-        android:layout_marginTop="71dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:fontFamily="monospace"
         android:hint="Email"
         android:inputType="text"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
@@ -70,17 +69,14 @@
         app:layout_constraintTop_toBottomOf="@+id/et_email" />
 
     <Button
-        android:id="@+id/btn_Login"
+        android:id="@+id/btn_SignUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:onClick="next"
-        android:text="LOGIN"
+        android:layout_marginTop="20dp"
+        android:text="SignUp"
         app:backgroundTint="#A88462"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_pass" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
