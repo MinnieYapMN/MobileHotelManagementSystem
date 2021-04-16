@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.AlarmClock
 import android.view.View
+import android.widget.Toast
 
 class mainpage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,7 +16,7 @@ class mainpage : AppCompatActivity() {
     fun roomReserve(view: View){
         val greeting = "Room Reservation"
 
-        val intent = Intent(this, roomservices::class.java).apply {
+        val intent = Intent(this,reserve::class.java).apply {
             putExtra(AlarmClock.EXTRA_MESSAGE, greeting)
         }
         startActivity(intent)
@@ -48,4 +49,9 @@ class mainpage : AppCompatActivity() {
         startActivity(intent)
     }
 
+    fun LogOut(view: View) {
+        Toast.makeText(this, "Logout.", Toast.LENGTH_LONG).show()
+        startActivity(Intent(this,MainActivity::class.java))
+        finish()
+    }
 }

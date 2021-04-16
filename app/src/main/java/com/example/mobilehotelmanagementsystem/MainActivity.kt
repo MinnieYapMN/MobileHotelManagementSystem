@@ -1,5 +1,6 @@
 package com.example.mobilehotelmanagementsystem
 
+import android.content.DialogInterface
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -7,7 +8,9 @@ import android.provider.AlarmClock
 import android.util.Patterns
 import android.view.View
 import android.widget.Button
+import android.widget.EditText
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import kotlinx.android.synthetic.main.activity_main.*
@@ -28,6 +31,38 @@ class MainActivity : AppCompatActivity() {
         btn_Login.setOnClickListener {
             doLogin()
         }
+        btn_forgotPass.setOnClickListener{
+            val builder = AlertDialog.Builder(this)
+            builder.setTitle("Forgot Password")
+            val view = layoutInflater.inflate(R.layout.dialog_forgot_password,null)
+            val email = view.findViewById<EditText>(R.id.et_email)
+            builder.setView(view)
+            builder.setPositiveButton("Reset",DialogInterface.OnClickListener { _, _ ->
+            forgotPassword(email)
+
+            })
+            builder.setNegativeButton("Close",DialogInterface.OnClickListener { _, _ ->  })
+            builder.show()
+        }
+    }
+
+    private fun forgotPassword(email:EditText) {
+        if (email.text.toString().isEmpty()) {
+            return
+        }
+
+        if (!Patterns.EMAIL_ADDRESS.matcher(email.text.toString()).matches()) {
+            return
+        }
+        auth.sendPasswordResetEmail(email.text.toString())
+                .addOnCompleteListener { task ->
+                    if (task.isSuccessful) {
+                        Toast.makeText(this, "Email sent.", Toast.LENGTH_LONG).show()
+                        //startActivity(Intent(this,resetpass::class.java))
+                       // finish()
+                    }
+
+                }
     }
 
     private fun doLogin() {
@@ -78,11 +113,11 @@ class MainActivity : AppCompatActivity() {
                 startActivity(Intent(this, mainpage::class.java))
                 finish()
             } else {
-                Toast.makeText(baseContext, "Please verify your email address.", Toast.LENGTH_LONG)
+                Toast.makeText(baseContext, "Please verify your email address.", Toast.LENGTH_SHORT)
                     .show()
             }
         }else {
-            Toast.makeText(baseContext, "Login failed.", Toast.LENGTH_LONG).show()
+            Toast.makeText(baseContext, "Login failed.", Toast.LENGTH_SHORT).show()
         }
     }
 }
