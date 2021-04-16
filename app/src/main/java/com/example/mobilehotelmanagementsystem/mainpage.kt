@@ -7,11 +7,17 @@ import android.provider.AlarmClock
 import android.view.View
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
+import kotlinx.android.synthetic.main.activity_mainpage.*
+import kotlinx.android.synthetic.main.activity_sign_up.*
 
 class mainpage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_mainpage)
+
+        btn_Logout.setOnClickListener {
+            Logout()
+        }
     }
 
     fun roomReserve(view: View){
@@ -41,6 +47,22 @@ class mainpage : AppCompatActivity() {
         startActivity(intent)
     }
 
+    fun checkIn(view: View) {
+        val greeting = "Check In Page"
+
+        val intent = Intent(this, CheckIn::class.java).apply {
+            putExtra(AlarmClock.EXTRA_MESSAGE, greeting)
+        }
+        startActivity(intent)
+    }
+    fun checkOut(view: View) {
+        val greeting = "Check Out Page"
+
+        val intent = Intent(this, CheckOut::class.java).apply {
+            putExtra(AlarmClock.EXTRA_MESSAGE, greeting)
+        }
+        startActivity(intent)
+    }
     fun staffMaintain(view: View) {
         val greeting = "Staff Maintenance"
 
@@ -50,7 +72,7 @@ class mainpage : AppCompatActivity() {
         startActivity(intent)
     }
 
-    fun LogOut(view: View) {
+    fun Logout() {
         FirebaseAuth.getInstance().signOut();
         Toast.makeText(this, "Logout.", Toast.LENGTH_LONG).show()
         startActivity(Intent(this,MainActivity::class.java))

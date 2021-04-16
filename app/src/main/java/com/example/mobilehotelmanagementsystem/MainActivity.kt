@@ -117,7 +117,7 @@ class MainActivity : AppCompatActivity() {
                     .show()
             }
         }else {
-            Toast.makeText(baseContext, "Login failed.", Toast.LENGTH_SHORT).show()
+            Toast.makeText(baseContext, "Login Page.", Toast.LENGTH_SHORT).show()
         }
     }
 }
