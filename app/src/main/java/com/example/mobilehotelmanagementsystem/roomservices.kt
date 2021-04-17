@@ -46,7 +46,7 @@ class roomservices : AppCompatActivity() {
             }else{
                 laundry = "0"
             }
-            database.setValue(Services(roomno,housekeep,spa,breakfast,laundry))
+            database.child(roomno.toString()).setValue(Services(roomno,housekeep,spa,breakfast,laundry))
             Toast.makeText(this, "Updated successful.", Toast.LENGTH_LONG).show()
         }
     }
