@@ -15,7 +15,7 @@ class mainpage : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_mainpage)
 
-        btn_Logout.setOnClickListener {
+        Logout.setOnClickListener {
             Logout()
         }
     }
@@ -38,7 +38,7 @@ class mainpage : AppCompatActivity() {
         startActivity(intent)
     }
 
-    fun roomMaintian(view: View) {
+    fun roomMaintain(view: View) {
         val greeting = "Room Maintenance"
 
         val intent = Intent(this, roommanagement::class.java).apply {

@@ -26,7 +26,7 @@
         tools:layout_editor_absoluteX="-2dp"
         tools:layout_editor_absoluteY="0dp" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button2"
         android:layout_width="136dp"
         android:layout_height="92dp"
@@ -37,6 +37,9 @@
         android:layout_marginRight="20dp"
         android:fontFamily="sans-serif-condensed-medium"
         android:onClick="roomReserve"
+        app:icon="@drawable/room"
+        app:iconGravity="top"
+        app:iconSize="30dp"
         android:text="Room Reservation"
         android:textColor="#FFFFFF"
         android:textSize="14sp"
@@ -45,23 +48,26 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button3"
         android:layout_width="136dp"
         android:layout_height="92dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="50dp"
         android:layout_marginRight="50dp"
-        android:background="#FFFFFF"
         android:fontFamily="sans-serif-condensed-medium"
         android:onClick="roomServices"
-        android:text="ROOM SERVICES"
+        android:text="Room Services"
         android:textColor="#FFFFFF"
         android:textSize="14sp"
         app:backgroundTint="#A88462"
+        app:icon="@drawable/services"
+        app:iconGravity="top"
+        app:iconSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button4"
         android:layout_width="136dp"
         android:layout_height="92dp"
@@ -72,6 +78,9 @@
         android:layout_marginRight="20dp"
         android:fontFamily="sans-serif-condensed-medium"
         android:onClick="staffMaintain"
+        app:icon="@drawable/staff"
+        app:iconGravity="top"
+        app:iconSize="30dp"
         android:text="Staff Maintenance"
         android:textColor="#FFFFFF"
         android:textSize="14sp"
@@ -80,7 +89,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button2" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
     android:id="@+id/button5"
     android:layout_width="136dp"
     android:layout_height="92dp"
@@ -88,7 +97,10 @@
     android:layout_marginEnd="50dp"
     android:layout_marginRight="50dp"
     android:fontFamily="sans-serif-condensed-medium"
-    android:onClick="roomMaintian"
+    android:onClick="roomMaintain"
+        app:icon="@drawable/maintenance"
+        app:iconGravity="top"
+        app:iconSize="30dp"
     android:text="Room Maintenance"
     android:textColor="#FFFFFF"
     android:textSize="14sp"
@@ -96,7 +108,7 @@
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintTop_toBottomOf="@+id/button3" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button6"
         android:layout_width="136dp"
         android:layout_height="92dp"
@@ -106,13 +118,16 @@
         android:fontFamily="sans-serif-condensed-medium"
         android:onClick="checkOut"
         android:text="Check-Out"
+        app:icon="@drawable/checkout"
+        app:iconGravity="top"
+        app:iconSize="30dp"
         android:textColor="#FFFFFF"
         android:textSize="14sp"
         app:backgroundTint="#A88462"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button5" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button7"
         android:layout_width="136dp"
         android:layout_height="92dp"
@@ -123,6 +138,9 @@
         android:layout_marginRight="20dp"
         android:fontFamily="sans-serif-condensed-medium"
         android:onClick="checkIn"
+        app:icon="@drawable/checkin"
+        app:iconGravity="top"
+        app:iconSize="30dp"
         android:text="Check-In"
         android:textColor="#FFFFFF"
         android:textSize="14sp"
@@ -131,12 +149,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button4" />
 
-    <Button
-        android:id="@+id/btn_Logout"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/Logout"
         android:layout_width="84dp"
         android:layout_height="43dp"
         android:layout_marginTop="32dp"
-        android:onClick="Logout"
+        app:icon="@drawable/logout"
+        app:iconSize="20dp"
         android:text="LOGOUT"
         android:textSize="10sp"
         app:backgroundTint="#A88462"

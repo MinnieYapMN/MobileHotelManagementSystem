@@ -3,9 +3,12 @@ package com.example.mobilehotelmanagementsystem
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.AlarmClock
 import android.util.Patterns
+import android.view.View
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
+import kotlinx.android.synthetic.main.activity_mainpage.*
 import kotlinx.android.synthetic.main.activity_sign_up.*
 
 class SignUp : AppCompatActivity() {
@@ -57,5 +60,13 @@ class SignUp : AppCompatActivity() {
                         Toast.LENGTH_SHORT).show()
                 }
             }
+    }
+    fun exit(view: View) {
+        val greeting = "Main Page"
+
+        val intent = Intent(this, mainpage::class.java).apply {
+            putExtra(AlarmClock.EXTRA_MESSAGE, greeting)
+        }
+        startActivity(intent)
     }
 }

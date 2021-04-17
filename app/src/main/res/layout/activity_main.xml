@@ -77,24 +77,28 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_email" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_Login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="LOGIN"
+        app:icon="@drawable/login"
+        app:iconSize="30dp"
         app:backgroundTint="#A88462"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_pass" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_SignUp"
         android:layout_width="308dp"
         android:layout_height="40dp"
         android:layout_marginTop="10dp"
         android:text="Don't have Account?"
+        app:icon="@drawable/account"
+        app:iconSize="30dp"
         app:backgroundTint="#A88462"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
