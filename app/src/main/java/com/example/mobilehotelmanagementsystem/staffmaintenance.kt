@@ -14,7 +14,8 @@ class staffmaintenance : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_staffmaintenance)
 
-        var database = FirebaseDatabase.getInstance().reference
+        var database = FirebaseDatabase.getInstance()
+        var staff = database.getReference("Staff")
 
         buttonSAdd.setOnClickListener{
             var StaffId = txtStaffId.text.toString()
@@ -22,7 +23,7 @@ class staffmaintenance : AppCompatActivity() {
             var StaffGender = txtStaffGender.text.toString()
             var StaffBirth = txtStaffBirth.text.toString()
 
-            database.child(StaffId.toString()).setValue(Staff(StaffId, StaffName, StaffGender, StaffBirth))
+            staff.child(StaffId.toString()).setValue(Staff(StaffId, StaffName, StaffGender, StaffBirth))
         }
 
         buttonSupdate.setOnClickListener{

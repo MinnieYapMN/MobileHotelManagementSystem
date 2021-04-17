@@ -18,7 +18,8 @@ class roomservices : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_room_services)
 
-        var database = FirebaseDatabase.getInstance().reference
+        var database = FirebaseDatabase.getInstance()
+        var roomS = database.getReference("RoomService")
 
         btnSave.setOnClickListener {
             var roomno = txtRoom.text.toString()
@@ -26,28 +27,36 @@ class roomservices : AppCompatActivity() {
             var spa = cb_ss.isChecked.toString()
             var breakfast = cb_bf.isChecked.toString()
             var laundry = cb_dcnl.isChecked.toString()
+            var result = ""
+            result += "Selected Items: "
             if(cb_hk.isChecked){
                 housekeep = "50"
+                result += "Housekeeping, "
             }else{
                 housekeep = "0"
             }
             if(cb_ss.isChecked){
                 spa = "80"
+                result += "Spa, "
             }else{
                 spa = "0"
             }
             if(cb_bf.isChecked){
                 breakfast = "100"
+                result += "Breakfast, "
             }else{
                 breakfast = "0"
             }
             if(cb_dcnl.isChecked){
                 laundry = "40"
+                result += "Dry Cleanning and Laundry, "
             }else{
                 laundry = "0"
             }
-            database.child(roomno.toString()).setValue(Services(roomno,housekeep,spa,breakfast,laundry))
-            Toast.makeText(this, "Updated successful.", Toast.LENGTH_LONG).show()
+
+            val serCharge:Int = housekeep.toInt() + spa.toInt() + breakfast.toInt() + laundry.toInt()
+            roomS.child(roomno.toString()).setValue(Services(roomno,housekeep,spa,breakfast,laundry,serCharge))
+            Toast.makeText(this, result.toString(), Toast.LENGTH_LONG).show()
         }
     }
 
@@ -62,3 +71,5 @@ class roomservices : AppCompatActivity() {
         startActivity(intent)
     }
 }
+
+
