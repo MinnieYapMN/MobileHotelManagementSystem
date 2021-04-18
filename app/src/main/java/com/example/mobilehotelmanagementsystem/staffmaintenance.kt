@@ -36,11 +36,6 @@ class staffmaintenance : AppCompatActivity() {
             val Staff = Staff(StaffId,StaffName,StaffGender,StaffBirth,StaffEmail)
             database.child(StaffId).setValue(Staff).addOnSuccessListener {
 
-                txtStaffId.text.clear()
-                txtStaffName.text.clear()
-                txtStaffGender.text.clear()
-                txtStaffBirth.text.clear()
-                txtStaffEmail.text.clear()
 
                 Toast.makeText(this,"Successfully Saved",Toast.LENGTH_SHORT).show()
 
@@ -76,10 +71,7 @@ class staffmaintenance : AppCompatActivity() {
 
         database.child(StaffId).updateChildren(Staff).addOnSuccessListener {
 
-            txtStaffId.text.clear()
-            txtStaffName.text.clear()
-            txtStaffGender.text.clear()
-            txtStaffBirth.text.clear()
+
             Toast.makeText(this,"Successfully Updated",Toast.LENGTH_SHORT).show()
 
 

@@ -52,6 +52,10 @@ class roomdetails : AppCompatActivity() {
         database.child(roomId).removeValue().addOnSuccessListener {
 
             etroom.text.clear()
+            tvRPrice.setText("")
+            tvRStatus.setText("")
+            tvRType.setText("")
+
             Toast.makeText(this,"Successfully Deleted",Toast.LENGTH_SHORT).show()
 
         }.addOnFailureListener{
@@ -72,7 +76,7 @@ class roomdetails : AppCompatActivity() {
                 val RoomStatus = it.child("roomStatus").value
                 val RoomType = it.child("roomType").value
                 Toast.makeText(this,"Successfuly Read",Toast.LENGTH_SHORT).show()
-                etroom.text.clear()
+
                 tvRPrice.text = RoomPrice.toString()
                 tvRStatus.text = RoomStatus.toString()
                 tvRType.text = RoomType.toString()

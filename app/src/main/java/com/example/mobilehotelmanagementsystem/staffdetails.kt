@@ -8,6 +8,7 @@ import android.view.View
 import android.widget.Toast
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
+import kotlinx.android.synthetic.main.activity_roomdetails.*
 import kotlinx.android.synthetic.main.activity_staffdetails.*
 
 
@@ -52,6 +53,9 @@ class staffdetails : AppCompatActivity() {
         database.child(staffId).removeValue().addOnSuccessListener {
 
             etstaff.text.clear()
+            tvName.setText("")
+            tvGender.setText("")
+            tvBirth.setText("")
             Toast.makeText(this,"Successfully Deleted",Toast.LENGTH_SHORT).show()
 
         }.addOnFailureListener{
@@ -71,7 +75,7 @@ class staffdetails : AppCompatActivity() {
                 val StaffGender = it.child("staffGender").value
                 val StaffBirth = it.child("staffBirth").value
                 Toast.makeText(this,"Successfully Read",Toast.LENGTH_SHORT).show()
-                etstaff.text.clear()
+
                 tvName.text = StaffName.toString()
                 tvGender.text = StaffGender.toString()
                 tvBirth.text = StaffBirth.toString()

@@ -31,10 +31,7 @@ class roommanagement : AppCompatActivity() {
             val Room = Room(RoomId,RoomType, RoomPrice, RoomStatus)
             database.child(RoomId).setValue(Room).addOnSuccessListener {
 
-                txtRoomId.text.clear()
-                txtRoomType.text.clear()
-                txtRoomPrice.text.clear()
-                txtRoomStatus.text.clear()
+
 
                 Toast.makeText(this,"Successfully Saved",Toast.LENGTH_SHORT).show()
 
@@ -69,10 +66,7 @@ class roommanagement : AppCompatActivity() {
 
         database.child(RoomId).updateChildren(Room).addOnSuccessListener {
 
-            txtRoomId.text.clear()
-            txtRoomType.text.clear()
-            txtRoomPrice.text.clear()
-            txtRoomStatus.text.clear()
+
 
             Toast.makeText(this,"Successfully Updated",Toast.LENGTH_SHORT).show()
 

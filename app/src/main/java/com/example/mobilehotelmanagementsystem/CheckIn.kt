@@ -34,7 +34,7 @@ class CheckIn : AppCompatActivity() {
                     database = FirebaseDatabase.getInstance().getReference("RoomReserve")
                     bdatabase = FirebaseDatabase.getInstance().getReference("Room")
                     database.child(name).child("roomNo").setValue(RoomNo)
-                    database.child(RoomNo).child("roomStatus").setValue(status)
+                    bdatabase.child(RoomNo).child("roomStatus").setValue(status)
                     val greeting = "Back To Main Page"
                     val intent2 = Intent(this, mainpage::class.java).apply {
                         putExtra(AlarmClock.EXTRA_MESSAGE,greeting)
