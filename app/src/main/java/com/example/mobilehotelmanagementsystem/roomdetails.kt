@@ -68,13 +68,11 @@ class roomdetails : AppCompatActivity() {
 
             if (it.exists()){
 
-                val RoomName = it.child("roomName").value
                 val RoomPrice = it.child("roomPrice").value
                 val RoomStatus = it.child("roomStatus").value
                 val RoomType = it.child("roomType").value
                 Toast.makeText(this,"Successfuly Read",Toast.LENGTH_SHORT).show()
                 etroom.text.clear()
-                tvRName.text = RoomName.toString()
                 tvRPrice.text = RoomPrice.toString()
                 tvRStatus.text = RoomStatus.toString()
                 tvRType.text = RoomType.toString()

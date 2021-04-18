@@ -127,22 +127,6 @@
             app:layout_constraintTop_toBottomOf="@+id/tvPayment" />
 
         <TextView
-            android:id="@+id/textView10"
-            android:layout_width="148dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="31dp"
-            android:fontFamily="sans-serif"
-            android:lineSpacingExtra="8sp"
-            android:text="Room Name:"
-            android:textAllCaps="false"
-            android:textColor="#121111"
-            android:textSize="23sp"
-            android:textStyle="bold"
-            android:typeface="serif"
-            app:layout_constraintTop_toBottomOf="@+id/textView11"
-            tools:layout_editor_absoluteX="15dp" />
-
-        <TextView
             android:id="@+id/textView11"
             android:layout_width="128dp"
             android:layout_height="43dp"
@@ -201,7 +185,11 @@
             android:id="@+id/tvSerCharge"
             android:layout_width="155dp"
             android:layout_height="39dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
             android:fontFamily="sans-serif"
             android:lineSpacingExtra="8sp"
             android:text="Room Type:"
@@ -210,8 +198,9 @@
             android:textSize="23sp"
             android:textStyle="bold"
             android:typeface="serif"
-            app:layout_constraintTop_toBottomOf="@+id/textView10"
-            tools:layout_editor_absoluteX="15dp" />
+            app:layout_constraintEnd_toStartOf="@+id/txtRoomType"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
         <TextView
             android:id="@+id/tvPayment"
@@ -272,7 +261,7 @@
             android:layout_height="42dp"
             android:layout_marginStart="3dp"
             android:layout_marginLeft="3dp"
-            android:layout_marginTop="28dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="30dp"
             android:layout_marginRight="30dp"
             android:background="#F8F3F3"
@@ -284,26 +273,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toEndOf="@+id/tvSerCharge"
-            app:layout_constraintTop_toBottomOf="@+id/txtRoomName" />
-
-        <EditText
-            android:id="@+id/txtRoomName"
-            android:layout_width="208dp"
-            android:layout_height="42dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="74dp"
-            android:layout_marginEnd="30dp"
-            android:layout_marginRight="30dp"
-            android:background="#F8F3F3"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:shadowColor="#5A0F0F"
-            android:textColor="#0B0A0A"
-            android:textColorLink="#0F0F10"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/textView10"
-            app:layout_constraintTop_toTopOf="@+id/txtRoomId" />
+            app:layout_constraintTop_toBottomOf="@+id/txtRoomId" />
 
         <EditText
             android:id="@+id/txtRoomStatus"

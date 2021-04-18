@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.AlarmClock
 import android.view.View
+import android.widget.TextView
 import android.widget.Toast
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
@@ -12,9 +13,15 @@ import kotlinx.android.synthetic.main.activity_staffmaintenance.*
 
 class staffmaintenance : AppCompatActivity() {
     private lateinit var database : DatabaseReference
+    companion object{
+        const val MAIL = "MAIL"
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_staffmaintenance)
+        val mail = intent.getStringExtra(staffmaintenance.MAIL)
+        val resultMail = findViewById<TextView>(R.id.txtStaffEmail)
+        resultMail.text = "" + mail
 
 
         buttonSAdd.setOnClickListener{
@@ -22,15 +29,18 @@ class staffmaintenance : AppCompatActivity() {
             var StaffName = txtStaffName.text.toString()
             var StaffGender = txtStaffGender.text.toString()
             var StaffBirth = txtStaffBirth.text.toString()
+            var StaffEmail = txtStaffEmail.text.toString()
+
 
             database = FirebaseDatabase.getInstance().getReference("Staff")
-            val Staff = Staff(StaffId,StaffName,StaffGender,StaffBirth)
+            val Staff = Staff(StaffId,StaffName,StaffGender,StaffBirth,StaffEmail)
             database.child(StaffId).setValue(Staff).addOnSuccessListener {
 
                 txtStaffId.text.clear()
                 txtStaffName.text.clear()
                 txtStaffGender.text.clear()
                 txtStaffBirth.text.clear()
+                txtStaffEmail.text.clear()
 
                 Toast.makeText(this,"Successfully Saved",Toast.LENGTH_SHORT).show()
 

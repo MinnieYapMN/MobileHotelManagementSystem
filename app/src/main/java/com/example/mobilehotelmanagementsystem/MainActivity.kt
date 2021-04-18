@@ -14,6 +14,7 @@ import androidx.appcompat.app.AlertDialog
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_roomdetails.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -38,7 +39,7 @@ class MainActivity : AppCompatActivity() {
             val email = view.findViewById<EditText>(R.id.et_email)
             builder.setView(view)
             builder.setPositiveButton("Reset",DialogInterface.OnClickListener { _, _ ->
-            forgotPassword(email)
+                forgotPassword(email)
 
             })
             builder.setNegativeButton("Close",DialogInterface.OnClickListener { _, _ ->  })
@@ -55,14 +56,14 @@ class MainActivity : AppCompatActivity() {
             return
         }
         auth.sendPasswordResetEmail(email.text.toString())
-                .addOnCompleteListener { task ->
-                    if (task.isSuccessful) {
-                        Toast.makeText(this, "Email sent.", Toast.LENGTH_LONG).show()
-                        //startActivity(Intent(this,resetpass::class.java))
-                       // finish()
-                    }
-
+            .addOnCompleteListener { task ->
+                if (task.isSuccessful) {
+                    Toast.makeText(this, "Email sent.", Toast.LENGTH_LONG).show()
+                    //startActivity(Intent(this,resetpass::class.java))
+                    // finish()
                 }
+
+            }
     }
 
     private fun doLogin() {
@@ -109,7 +110,9 @@ class MainActivity : AppCompatActivity() {
     private fun updateUI(currentUser: FirebaseUser?) {
         if (currentUser != null) {
             if (currentUser.isEmailVerified) {
-                startActivity(Intent(this, mainpage::class.java))
+                val intent = Intent(this, mainpage::class.java)
+                intent.putExtra(staffmaintenance.MAIL,et_email.text.toString())
+                startActivity(intent)
                 finish()
                 Toast.makeText(baseContext, "Login Successful.", Toast.LENGTH_SHORT)
                     .show()
@@ -122,9 +125,3 @@ class MainActivity : AppCompatActivity() {
         }
     }
 }
-
-
-
-
-
-

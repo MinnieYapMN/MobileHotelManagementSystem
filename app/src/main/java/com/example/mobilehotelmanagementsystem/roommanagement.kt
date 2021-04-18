@@ -23,17 +23,15 @@ class roommanagement : AppCompatActivity() {
 
         buttonRAdd.setOnClickListener{
             var RoomId = txtRoomId.text.toString()
-            var RoomName = txtRoomName.text.toString()
             var RoomType = txtRoomType.text.toString()
             var RoomPrice = txtRoomPrice.text.toString()
             var RoomStatus = txtRoomStatus.text.toString()
 
             database = FirebaseDatabase.getInstance().getReference("Room")
-            val Room = Room(RoomId,RoomName,RoomType, RoomPrice, RoomStatus)
+            val Room = Room(RoomId,RoomType, RoomPrice, RoomStatus)
             database.child(RoomId).setValue(Room).addOnSuccessListener {
 
                 txtRoomId.text.clear()
-                txtRoomName.text.clear()
                 txtRoomType.text.clear()
                 txtRoomPrice.text.clear()
                 txtRoomStatus.text.clear()
@@ -50,22 +48,20 @@ class roommanagement : AppCompatActivity() {
         buttonRUpdate.setOnClickListener {
 
             var RoomId = txtRoomId.text.toString()
-            var RoomName = txtRoomName.text.toString()
             var RoomType = txtRoomType.text.toString()
             var RoomPrice = txtRoomPrice.text.toString()
             var RoomStatus = txtRoomStatus.text.toString()
 
-            updateData(RoomId,RoomName,RoomType,RoomPrice,RoomStatus)
+            updateData(RoomId,RoomType,RoomPrice,RoomStatus)
 
         }
 
     }
 
-    private fun updateData(RoomId: String, RoomName: String, RoomType: String, RoomPrice: String, RoomStatus: String) {
+    private fun updateData(RoomId: String, RoomType: String, RoomPrice: String, RoomStatus: String) {
         database = FirebaseDatabase.getInstance().getReference("Room")
         val Room = mapOf<String,String>(
             "roomId" to RoomId,
-            "roomName" to RoomName,
             "roomType" to RoomType,
             "roomPrice" to RoomPrice,
             "roomStatus" to RoomStatus
@@ -74,7 +70,6 @@ class roommanagement : AppCompatActivity() {
         database.child(RoomId).updateChildren(Room).addOnSuccessListener {
 
             txtRoomId.text.clear()
-            txtRoomName.text.clear()
             txtRoomType.text.clear()
             txtRoomPrice.text.clear()
             txtRoomStatus.text.clear()
