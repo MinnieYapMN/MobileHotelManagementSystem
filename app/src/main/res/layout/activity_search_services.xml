@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignUp">
+    tools:context=".search_services">
 
     <EditText
         android:id="@+id/editTextTextPersonName3"
@@ -15,7 +15,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:lineSpacingExtra="8sp"
-        android:text="@string/sign_up_page"
+        android:text="@string/search_service"
         android:gravity="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#F7F9FA"
@@ -25,63 +25,37 @@
         android:verticalScrollbarPosition="defaultPosition"
         tools:layout_editor_absoluteX="-2dp"
         tools:layout_editor_absoluteY="0dp"
-        tools:ignore="MissingConstraints" />
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="326dp"
-        android:layout_height="197dp"
-        android:layout_marginTop="1dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3"
-        app:srcCompat="@drawable/logo" />
+        tools:ignore="MissingConstraints"
+        android:autofillHints="" />
 
     <EditText
-        android:id="@+id/et_email"
-        android:layout_width="272dp"
-        android:layout_height="91dp"
-        android:layout_marginTop="20dp"
+        android:id="@+id/textRoom"
+        android:layout_width="239dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
         android:ems="10"
         android:fontFamily="monospace"
-        android:hint="Email"
-        android:inputType="text"
+        android:hint="Search here..."
+        android:inputType="textPersonName"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
 
-    <EditText
-        android:id="@+id/et_pass"
-        android:layout_width="268dp"
-        android:layout_height="86dp"
-        android:layout_marginStart="68dp"
-        android:layout_marginLeft="68dp"
-        android:layout_marginTop="19dp"
-        android:layout_marginEnd="75dp"
-        android:layout_marginRight="75dp"
-        android:ems="10"
-        android:fontFamily="monospace"
-        android:hint="Password"
-        android:textStyle="bold"
-        android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_email" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_SignUp"
+    <Button
+        android:id="@+id/btnSearch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="SignUp"
-        app:icon="@drawable/signup"
-        app:iconSize="30dp"
+        android:layout_marginStart="302dp"
+        android:layout_marginLeft="302dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/search"
         app:backgroundTint="#A88462"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_pass" />
+        app:layout_constraintTop_toBottomOf="@+id/textRoom" />
 
     <Button
         android:id="@+id/button25"
@@ -89,12 +63,37 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="323dp"
         android:layout_marginRight="323dp"
-        android:onClick="exit"
-        android:text="Back"
+        android:onClick="back"
+        android:text="@string/back"
         app:backgroundTint="#A88462"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="140dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="monospace"
+        android:text="Room No:"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textRoom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button25" />
+
+    <TextView
+        android:id="@+id/tvall"
+        android:layout_width="336dp"
+        android:layout_height="239dp"
+        android:layout_marginTop="29dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSearch" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

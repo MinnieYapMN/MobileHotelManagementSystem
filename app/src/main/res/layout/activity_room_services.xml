@@ -5,9 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
     android:layout_width="match_parent">
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".roomservices">
@@ -19,15 +17,17 @@
         android:layout_height="70dp"
         android:background="#483A33"
         android:ems="10"
+        android:gravity="center"
         android:inputType="textPersonName"
         android:lineSpacingExtra="8sp"
-        android:text="       Room Services Page"
+        android:text="@string/room_services_page"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#F7F9FA"
         android:textSize="30sp"
         android:textStyle="bold"
         android:typeface="serif"
         android:verticalScrollbarPosition="defaultPosition"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="-2dp"
         tools:layout_editor_absoluteY="0dp" />
 
@@ -105,6 +105,18 @@
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cb_bf" />
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="search"
+        android:text="Search"
+        app:backgroundTint="#A88462"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/button25"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
 
     <Button
         android:id="@+id/btnSave"

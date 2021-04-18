@@ -49,7 +49,7 @@ class roomservices : AppCompatActivity() {
             }
             if(cb_dcnl.isChecked){
                 laundry = "40"
-                result += "Dry Cleanning and Laundry, "
+                result += "Dry Cleaning and Laundry, "
             }else{
                 laundry = "0"
             }
@@ -66,6 +66,15 @@ class roomservices : AppCompatActivity() {
         val greeting = "Main Page"
 
         val intent = Intent(this, mainpage::class.java).apply {
+            putExtra(AlarmClock.EXTRA_MESSAGE, greeting)
+        }
+        startActivity(intent)
+    }
+
+    fun search(view: View) {
+        val greeting = "Searching"
+
+        val intent = Intent(this, search_services::class.java).apply {
             putExtra(AlarmClock.EXTRA_MESSAGE, greeting)
         }
         startActivity(intent)
