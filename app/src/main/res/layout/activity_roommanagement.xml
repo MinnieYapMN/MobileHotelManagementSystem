@@ -124,7 +124,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/buttonRShow"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+            app:layout_constraintTop_toBottomOf="@+id/tvPayment" />
 
         <TextView
             android:id="@+id/textView10"
@@ -195,10 +195,10 @@
             android:textStyle="bold"
             android:typeface="serif"
             app:layout_constraintEnd_toStartOf="@+id/txtRoomPrice"
-            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+            app:layout_constraintTop_toBottomOf="@+id/tvSerCharge" />
 
         <TextView
-            android:id="@+id/textView14"
+            android:id="@+id/tvSerCharge"
             android:layout_width="155dp"
             android:layout_height="39dp"
             android:layout_marginTop="30dp"
@@ -214,7 +214,7 @@
             tools:layout_editor_absoluteX="15dp" />
 
         <TextView
-            android:id="@+id/textView15"
+            android:id="@+id/tvPayment"
             android:layout_width="153dp"
             android:layout_height="39dp"
             android:layout_marginTop="24dp"
@@ -283,7 +283,7 @@
             android:textColorLink="#0F0F10"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/textView14"
+            app:layout_constraintStart_toEndOf="@+id/tvSerCharge"
             app:layout_constraintTop_toBottomOf="@+id/txtRoomName" />
 
         <EditText
@@ -322,7 +322,7 @@
             android:textColorLink="#0F0F10"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/textView15"
+            app:layout_constraintStart_toEndOf="@+id/tvPayment"
             app:layout_constraintTop_toBottomOf="@+id/txtRoomPrice" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

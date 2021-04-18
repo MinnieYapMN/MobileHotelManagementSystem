@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ScrollView 
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -20,6 +20,7 @@
             android:layout_marginStart="4dp"
             android:layout_marginLeft="4dp"
             android:layout_marginTop="4dp"
+            android:onClick="back"
             android:text="BACK"
             app:backgroundTint="#483A33"
             app:layout_constraintStart_toStartOf="parent"
@@ -27,7 +28,7 @@
 
         <ImageView
             android:id="@+id/imageView4"
-            android:layout_width="326dp"
+            android:layout_width="300dp"
             android:layout_height="197dp"
             android:layout_marginStart="4dp"
             android:layout_marginLeft="4dp"
@@ -112,7 +113,7 @@
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ciPhoneNo" />
+            app:layout_constraintTop_toBottomOf="@+id/ciPhone" />
 
         <TextView
             android:id="@+id/textView30"
@@ -125,19 +126,7 @@
             android:textColor="#2B2626"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView29" />
-
-        <EditText
-            android:id="@+id/cieRoom"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:ems="10"
-            android:hint="(If no, enter 0)"
-            android:inputType="textPersonName"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView30" />
+            app:layout_constraintTop_toBottomOf="@+id/ciRno" />
 
         <TextView
             android:id="@+id/textView31"
@@ -150,19 +139,7 @@
             android:textColor="#171515"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/cieRoom" />
-
-        <EditText
-            android:id="@+id/ciDRoom"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:ems="10"
-            android:hint="(If no, enter 0)"
-            android:inputType="textPersonName"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView31" />
+            app:layout_constraintTop_toBottomOf="@+id/ciERoom" />
 
         <TextView
             android:id="@+id/textView32"
@@ -177,18 +154,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ciDRoom" />
 
-        <EditText
-            android:id="@+id/ciNOadult"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:ems="10"
-            android:hint="(If no, enter 0)"
-            android:inputType="textPersonName"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView32" />
-
         <TextView
             android:id="@+id/textView33"
             android:layout_width="wrap_content"
@@ -200,34 +165,108 @@
             android:textColor="#151414"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ciNOadult" />
-
-        <EditText
-            android:id="@+id/ciNOchild"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:ems="10"
-            android:hint="(If no, enter 0)"
-            android:inputType="textPersonName"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView33" />
+            app:layout_constraintTop_toBottomOf="@+id/ciNoAdult" />
 
         <Button
             android:id="@+id/ciGet"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="244dp"
-            android:layout_marginLeft="244dp"
-            android:layout_marginTop="700dp"
+            android:layout_marginStart="225dp"
+            android:layout_marginLeft="225dp"
+            android:layout_marginTop="650dp"
             android:text="GET"
             app:backgroundTint="#483A33"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
+        <Button
+            android:id="@+id/CISubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="225dp"
+            android:layout_marginLeft="225dp"
+            android:layout_marginTop="5dp"
+            android:onClick="submit"
+            android:text="SUBMIT"
+            app:backgroundTint="#483A33"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ciGet" />
+
+        <TextView
+            android:id="@+id/ciPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="TextView"
+            android:textColor="#131212"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+        <TextView
+            android:id="@+id/ciERoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="TextView"
+            android:textColor="#2B2626"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+        <TextView
+            android:id="@+id/ciDRoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="TextView"
+            android:textColor="#514141"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+        <TextView
+            android:id="@+id/ciNoAdult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="TextView"
+            android:textColor="#433939"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+        <TextView
+            android:id="@+id/ciNoChildren"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="TextView"
+            android:textColor="#4A3C3C"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+        <TextView
+            android:id="@+id/textView42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Room Number"
+            android:textColor="#222020"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
         <EditText
-            android:id="@+id/ciPhoneNo"
+            android:id="@+id/ciRno"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -235,18 +274,7 @@
             android:ems="10"
             android:inputType="textPersonName"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView28" />
-
-        <Button
-            android:id="@+id/CISubmit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="244dp"
-            android:layout_marginLeft="244dp"
-            android:layout_marginTop="3dp"
-            android:text="SUBMIT"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ciGet" />
+            app:layout_constraintTop_toBottomOf="@+id/textView42" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-    
+
 </ScrollView>

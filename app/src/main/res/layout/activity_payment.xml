@@ -28,15 +28,15 @@
         tools:layout_editor_absoluteY="0dp" />
 
     <TextView
-        android:id="@+id/textView15"
+        android:id="@+id/tvPayment"
         android:layout_width="111dp"
         android:layout_height="37dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="44dp"
         android:layout_marginEnd="28dp"
         android:layout_marginRight="28dp"
         android:text="@string/textview"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+        app:layout_constraintTop_toBottomOf="@+id/tvSerCharge" />
 
     <TextView
         android:id="@+id/tvDate"
@@ -117,7 +117,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/customer_service_charge"
-        app:layout_constraintEnd_toStartOf="@+id/textView14"
+        app:layout_constraintEnd_toStartOf="@+id/tvSerCharge"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5"
         tools:ignore="MissingConstraints" />
@@ -134,13 +134,13 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/payment"
-        app:layout_constraintEnd_toStartOf="@+id/textView15"
+        app:layout_constraintEnd_toStartOf="@+id/tvPayment"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6"
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/tvSerCharge"
         android:layout_width="111dp"
         android:layout_height="37dp"
         android:layout_marginTop="10dp"

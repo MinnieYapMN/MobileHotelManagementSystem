@@ -201,7 +201,7 @@
             android:textColor="#231F1F"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/rciDate" />
+            app:layout_constraintTop_toBottomOf="@+id/rNoDay" />
 
         <EditText
             android:id="@+id/rNoAdult"
@@ -246,7 +246,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="225dp"
             android:layout_marginLeft="225dp"
-            android:layout_marginTop="756dp"
+            android:layout_marginTop="850dp"
             android:text="DONE"
             app:backgroundTint="#483A33"
             app:layout_constraintStart_toStartOf="parent"
@@ -264,7 +264,30 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView51" />
 
+        <TextView
+            android:id="@+id/textView40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="No. of days"
+            android:textColor="#4E4040"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rciDate" />
+
+        <EditText
+            android:id="@+id/rNoDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView40" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>
-

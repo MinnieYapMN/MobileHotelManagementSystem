@@ -14,25 +14,19 @@ class CheckOut : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_check_out)
-        val roomEt = findViewById<EditText>(R.id.roomET)
-        val nameEt = findViewById<EditText>(R.id.nameET)
-        val dateEt = findViewById<EditText>(R.id.dateET)
+
         val submitBtn = findViewById<Button>(R.id.submitBtn)
 
         submitBtn.setOnClickListener {
-            val greeting = "Welcome To Payment Page"
+            val name = nameET.text.toString()
+            val room = roomET.text.toString()
+            val date = dateET.text.toString()
 
-            var name = nameEt.text.toString()
-            var room = roomEt.text.toString()
-            var date = dateEt.text.toString()
+            val intent = Intent(this, Payment::class.java)
+                intent.putExtra(Payment.NAME,name)
+                intent.putExtra(Payment.ROOM,room)
+                intent.putExtra(Payment.CDATE,date)
 
-            val intent = Intent(this, Payment::class.java).apply {
-                putExtra(AlarmClock.EXTRA_MESSAGE, greeting)
-
-                intent.putExtra("name", name)
-                intent.putExtra("room", room)
-                intent.putExtra("date", date)
-            }
             startActivity(intent)
         }
     }
