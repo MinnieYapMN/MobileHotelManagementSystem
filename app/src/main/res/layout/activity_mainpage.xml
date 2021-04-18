@@ -25,7 +25,8 @@
         android:typeface="serif"
         android:verticalScrollbarPosition="defaultPosition"
         tools:layout_editor_absoluteX="-2dp"
-        tools:layout_editor_absoluteY="0dp" />
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button2"

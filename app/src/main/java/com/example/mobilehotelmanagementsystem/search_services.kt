@@ -21,9 +21,9 @@ class search_services : AppCompatActivity() {
         setContentView(R.layout.activity_search_services)
 
         btnSearch.setOnClickListener {
-            val rooms : String = textRoom.text.toString()
-            if(rooms.isNotEmpty()){
-                readServices(rooms)
+            val room : String = textRoom.text.toString()
+            if(room.isNotEmpty()){
+                readServices(room)
             }else{
                 Toast.makeText(this,"Please enter the Room No to search",Toast.LENGTH_SHORT).show()
             }
@@ -32,23 +32,40 @@ class search_services : AppCompatActivity() {
 
     }
 
-    private fun readServices(rooms: String) {
-        database = FirebaseDatabase.getInstance().getReference("Services")
-        database.child(rooms).get().addOnSuccessListener {
+    private fun readServices(room: String) {
+        database = FirebaseDatabase.getInstance().getReference("RoomService")
+        database.child(room).get().addOnSuccessListener {
             if(it.exists()){
                     val housekeep = it.child("housekeep").value
+                    val housekeep1:Int = housekeep.toString().toInt()
                     val spa = it.child("spa").value
+                    val spa1:Int = spa.toString().toInt()
                     val breakfast = it.child("breakfast").value
+                    val breakfast1:Int = breakfast.toString().toInt()
                     val laundry = it.child("laundry").value
-                    val serCharge = it.child("serCharge").value
+                    val laundry1:Int = laundry.toString().toInt()
                     Toast.makeText(this,"Successfully read!",Toast.LENGTH_SHORT).show()
                     textRoom.text.clear()
-                    tvall.text = housekeep.toString()
-                    tvall.text = spa.toString()
-                    tvall.text = breakfast.toString()
-                    tvall.text = laundry.toString()
-                    tvall.text = serCharge.toString()
-
+                    if(housekeep1 > 0){
+                        tvhk.text = "Yes"
+                    }else{
+                        tvhk.text = "No"
+                    }
+                if(spa1 > 0){
+                    tvss.text = "Yes"
+                }else{
+                    tvss.text = "No"
+                }
+                if(breakfast1 > 0){
+                    tvbf.text = "Yes"
+                }else{
+                    tvbf.text = "No"
+                }
+                if(laundry1 > 0){
+                    tvdcnl.text = "Yes"
+                }else{
+                    tvdcnl.text = "No"
+                }
 
             }else{
                 Toast.makeText(this,"Room No doesn't have any services",Toast.LENGTH_SHORT).show()

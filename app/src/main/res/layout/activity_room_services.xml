@@ -43,7 +43,7 @@
         android:ems="10"
         android:fontFamily="monospace"
         android:inputType="textPersonName"
-        android:text="Room No : "
+        android:hint="Room No : "
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
