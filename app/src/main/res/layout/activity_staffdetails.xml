@@ -9,27 +9,42 @@
 
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".roomdetails">
+        tools:context=".staffdetails">
+
+
+        <Button
+            android:id="@+id/sdeletedataBtn"
+            android:layout_width="171dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:backgroundTint="@color/teal_200"
+            android:text="Delete"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etstaff" />
 
         <ImageView
-            android:id="@+id/imageView12"
+            android:id="@+id/imageView16"
             android:layout_width="405dp"
             android:layout_height="195dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName21"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
             app:srcCompat="@drawable/logo" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName21"
+            android:id="@+id/editTextTextPersonName"
             style="al"
-            android:layout_width="414dp"
-            android:layout_height="70dp"
+            android:layout_width="421dp"
+            android:layout_height="76dp"
             android:background="#090909"
             android:ems="10"
             android:inputType="textPersonName"
             android:lineSpacingExtra="8sp"
-            android:text="        Room Management"
+            android:text="          Staff Maintenance"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="#F7F9FA"
             android:textSize="30sp"
@@ -40,66 +55,18 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-
-        <EditText
-            android:id="@+id/etroom"
-            android:layout_width="360dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="26dp"
-            android:layout_marginLeft="26dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginEnd="26dp"
-            android:layout_marginRight="26dp"
-            android:background="@drawable/input"
-            android:hint="Room No"
-            android:paddingLeft="20dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView24" />
-
-        <Button
-            android:id="@+id/rreaddataBtn"
-            android:layout_width="130dp"
-            android:layout_height="49dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginStart="44dp"
-            android:layout_marginLeft="44dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginEnd="64dp"
-            android:layout_marginRight="64dp"
-            android:backgroundTint="@color/teal_200"
-            android:text="Show"
-            android:textSize="18sp"
-            app:layout_constraintEnd_toStartOf="@+id/rdeletedataBtn"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/etroom" />
-
-        <Button
-            android:id="@+id/rdeletedataBtn"
-            android:layout_width="130dp"
-            android:layout_height="49dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="32dp"
-            android:layout_marginEnd="43dp"
-            android:layout_marginRight="43dp"
-            android:backgroundTint="@color/teal_200"
-            android:text="DELETE"
-            android:textSize="18sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/etroom" />
-
         <TextView
-            android:id="@+id/textView24"
+            android:id="@+id/textView35"
             android:layout_width="178dp"
             android:layout_height="41dp"
-            android:layout_marginStart="112dp"
-            android:layout_marginLeft="112dp"
-            android:layout_marginTop="19dp"
-            android:layout_marginEnd="121dp"
-            android:layout_marginRight="121dp"
+            android:layout_marginStart="117dp"
+            android:layout_marginLeft="117dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="117dp"
+            android:layout_marginRight="117dp"
             android:fontFamily="sans-serif"
             android:lineSpacingExtra="10sp"
-            android:text="Room Details"
+            android:text="Staff Details"
             android:textAllCaps="true"
             android:textColor="#100F0F"
             android:textSize="24sp"
@@ -107,16 +74,49 @@
             android:typeface="serif"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+            app:layout_constraintTop_toBottomOf="@+id/imageView16" />
+
+        <EditText
+            android:id="@+id/etstaff"
+            android:layout_width="360dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/input"
+            android:hint="Staff Id"
+            android:paddingLeft="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView35" />
+
+
+        <Button
+            android:id="@+id/sreaddataBtn"
+            android:layout_width="170dp"
+            android:layout_height="54dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="29dp"
+            android:layout_marginRight="29dp"
+            android:backgroundTint="@color/teal_200"
+            android:text="Show"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/sdeletedataBtn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etstaff" />
 
         <View
-            android:id="@+id/view"
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:layout_marginTop="15dp"
             android:background="@color/black"
+            android:layout_marginTop="15dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/rreaddataBtn" />
+            app:layout_constraintTop_toBottomOf="@+id/sreaddataBtn"/>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -124,12 +124,12 @@
             android:orientation="horizontal"
             android:layout_marginTop="40dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/rreaddataBtn">
+            app:layout_constraintTop_toBottomOf="@+id/sreaddataBtn">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Room Name:"
+                android:text="Staff Name:"
                 android:textColor="@color/black"
                 android:layout_marginStart="20dp"
                 android:textSize="20sp"
@@ -137,7 +137,7 @@
                 android:layout_marginLeft="20dp" />
 
             <TextView
-                android:id="@+id/tvRName"
+                android:id="@+id/tvName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text=""
@@ -155,12 +155,12 @@
             android:orientation="horizontal"
             android:layout_marginTop="100dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/rreaddataBtn">
+            app:layout_constraintTop_toBottomOf="@+id/sreaddataBtn">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Room Type:"
+                android:text="Gender:"
                 android:textColor="@color/black"
                 android:layout_marginStart="20dp"
                 android:textSize="20sp"
@@ -168,7 +168,7 @@
                 android:layout_marginLeft="20dp" />
 
             <TextView
-                android:id="@+id/tvRType"
+                android:id="@+id/tvGender"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text=""
@@ -181,26 +181,26 @@
         </LinearLayout>
 
         <LinearLayout
-
+            android:id="@+id/linearLayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="160dp"
             android:orientation="horizontal"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/rreaddataBtn">
+            app:layout_constraintTop_toBottomOf="@+id/sreaddataBtn">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginLeft="20dp"
-                android:text="Room Price: "
+                android:text="Birth: "
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/tvRPrice"
+                android:id="@+id/tvBirth"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"
@@ -211,48 +211,13 @@
 
 
         </LinearLayout>
-
-        <LinearLayout
-
-
-            android:id="@+id/linearLayout2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="220dp"
-            android:orientation="horizontal"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/rreaddataBtn">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginLeft="20dp"
-                android:text="Room Status: "
-                android:textColor="@color/black"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/tvRStatus"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:layout_marginLeft="5dp"
-                android:text=""
-                android:textColor="@color/black"
-                android:textSize="20sp" />
-
-
-        </LinearLayout>
-
 
         <Button
-            android:id="@+id/buttonRDback"
-            android:layout_width="121dp"
-            android:layout_height="44dp"
-            android:layout_marginTop="13dp"
-            android:onClick="RDBack"
+            android:id="@+id/buttonSDback"
+            android:layout_width="111dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="20dp"
+            android:onClick="SDBack"
             android:shadowColor="#FFFFFF"
             android:text="Back"
             android:textAllCaps="true"
@@ -261,10 +226,9 @@
             android:textStyle="bold"
             app:backgroundTint="#483A33"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.486"
+            app:layout_constraintHorizontal_bias="0.946"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
-            tools:ignore="MissingConstraints" />
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

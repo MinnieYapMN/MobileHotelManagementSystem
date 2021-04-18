@@ -6,34 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".Payment">
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="696dp"
-        android:layout_height="996dp"
-        android:adjustViewBounds="true"
-        android:background="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.501"
-        app:srcCompat="@drawable/reception" />
-
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="696dp"
-        android:layout_height="996dp"
-        android:adjustViewBounds="true"
-        android:background="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.501"
-        app:srcCompat="@drawable/reception" />
-
     <EditText
         android:id="@+id/editTextTextPersonName36"
         style="al"
@@ -41,15 +13,17 @@
         android:layout_height="70dp"
         android:background="#483A33"
         android:ems="10"
+        android:gravity="center"
         android:inputType="textPersonName"
         android:lineSpacingExtra="8sp"
-        android:text="                   Payment"
+        android:text="@string/payment"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#F7F9FA"
         android:textSize="30sp"
         android:textStyle="bold"
         android:typeface="serif"
         android:verticalScrollbarPosition="defaultPosition"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="-2dp"
         tools:layout_editor_absoluteY="0dp" />
 
@@ -57,114 +31,166 @@
         android:id="@+id/textView15"
         android:layout_width="111dp"
         android:layout_height="37dp"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="268dp"
-        tools:layout_editor_absoluteY="397dp" />
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:text="@string/textview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/tvDate"
         android:layout_width="111dp"
         android:layout_height="37dp"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="268dp"
-        tools:layout_editor_absoluteY="239dp" />
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:text="@string/textview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRoom" />
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/tvRoom"
         android:layout_width="111dp"
         android:layout_height="37dp"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="268dp"
-        tools:layout_editor_absoluteY="194dp" />
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:text="@string/textview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCustName" />
 
     <EditText
         android:id="@+id/editTextTextPersonName3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="71dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="141dp" />
+        android:text="@string/name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName36" />
 
     <EditText
         android:id="@+id/editTextTextPersonName4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Contact No"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="186dp" />
+        android:text="@string/room_no"
+        app:layout_constraintEnd_toStartOf="@+id/tvRoom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
 
     <EditText
         android:id="@+id/editTextTextPersonName5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Email"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="231dp" />
+        android:text="@string/check_out_date"
+        app:layout_constraintEnd_toStartOf="@+id/tvDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
 
     <EditText
         android:id="@+id/editTextTextPersonName6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Customer Service Charge"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="276dp" />
+        android:text="@string/customer_service_charge"
+        app:layout_constraintEnd_toStartOf="@+id/textView14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/editTextTextPersonName7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Payment"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="397dp" />
-
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="111dp"
-        android:layout_height="37dp"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="268dp"
-        tools:layout_editor_absoluteY="149dp" />
+        android:text="@string/payment"
+        app:layout_constraintEnd_toStartOf="@+id/textView15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView14"
         android:layout_width="111dp"
         android:layout_height="37dp"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="268dp"
-        tools:layout_editor_absoluteY="284dp" />
-
-    <Button
-        android:id="@+id/btnLogout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="212dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:onClick="Logout"
-        android:text="Logout"
-        app:backgroundTint="#A88462"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:text="@string/textview"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/button5"
-        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+        app:layout_constraintTop_toBottomOf="@+id/tvDate"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/Logout"
+        android:layout_width="84dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/logout"
+        android:onClick="Logout"
+        android:textSize="10sp"
+        app:backgroundTint="#A88462"
+        app:icon="@drawable/logout"
+        app:iconSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.012"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="323dp"
+        android:layout_marginRight="323dp"
         android:onClick="back"
-        android:text="Back"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="646dp" />
+        android:text="@string/back"
+        app:backgroundTint="#A88462"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName36" />
+
+    <TextView
+        android:id="@+id/tvCustName"
+        android:layout_width="110dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName36" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

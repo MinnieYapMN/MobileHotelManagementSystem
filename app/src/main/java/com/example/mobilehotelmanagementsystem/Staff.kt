@@ -1,17 +1,5 @@
 package com.example.mobilehotelmanagementsystem
 
-class Staff {
-    var StaffId = ""
-    var StaffName = ""
-    var StaffGender = ""
-    var StaffBirth = ""
-
-    constructor(StaffId:String,StaffName:String,StaffGender:String,StaffBirth:String){
-        this.StaffId = StaffId
-        this.StaffName = StaffName
-        this.StaffGender = StaffGender
-        this.StaffBirth = StaffBirth
-
-    }
+data class Staff(val StaffId: String? = null, val StaffName: String? = null, val StaffGender:String? = null,val StaffBirth:String? = null){
 
 }

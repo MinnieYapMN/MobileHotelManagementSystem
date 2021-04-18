@@ -1,10 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CheckOut">
+    android:layout_width="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".CheckOut">
 
     <Button
         android:id="@+id/button23"
@@ -72,7 +78,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView49" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName34"
+        android:id="@+id/roomET"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
@@ -93,10 +99,10 @@
         android:textColor="#020202"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName34" />
+        app:layout_constraintTop_toBottomOf="@+id/roomET" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName35"
+        android:id="@+id/nameET"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
@@ -118,10 +124,10 @@
         android:textIsSelectable="false"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName35" />
+        app:layout_constraintTop_toBottomOf="@+id/nameET" />
 
     <EditText
-        android:id="@+id/editTextDate3"
+        android:id="@+id/dateET"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
@@ -132,16 +138,16 @@
         app:layout_constraintTop_toBottomOf="@+id/textView53" />
 
     <Button
-        android:id="@+id/button24"
+        android:id="@+id/submitBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="292dp"
         android:layout_marginLeft="292dp"
         android:layout_marginTop="388dp"
-        android:onClick="submit"
         android:text="Submit"
         app:backgroundTint="#483A33"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView20" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
