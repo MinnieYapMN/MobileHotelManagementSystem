@@ -179,7 +179,8 @@
             android:textSize="18sp"
             app:layout_constraintEnd_toStartOf="@+id/rcoDate"
             app:layout_constraintStart_toEndOf="@+id/rciDate"
-            tools:layout_editor_absoluteY="868dp" />
+            tools:layout_editor_absoluteY="868dp"
+            tools:ignore="MissingConstraints" />
 
         <EditText
             android:id="@+id/rDRoom"

@@ -51,19 +51,20 @@ class CheckOut : AppCompatActivity() {
             val date = dateET.text.toString()
 
             val intent = Intent(this, Payment::class.java)
-                intent.putExtra(Payment.NAME,name)
-                intent.putExtra(Payment.ROOM,room)
-                intent.putExtra(Payment.CDATE,date)
+            intent.putExtra(Payment.NAME, name)
+            intent.putExtra(Payment.ROOM, room)
+            intent.putExtra(Payment.CDATE, date)
 
             startActivity(intent)
+
             dateET .setOnClickListener {
                 val datepicker2 = DatePickerDialog(
-                        this,
-                        DatePickerDialog.OnDateSetListener { view, myear, mmonth, mdayOfMonth ->
+                    this,
+                    DatePickerDialog.OnDateSetListener { view, myear, mmonth, mdayOfMonth ->
 
-                            dateET.setText(String.format("%02d-%02d-%02d", myear, mmonth + 1, mdayOfMonth))
+                        dateET.setText(String.format("%02d-%02d-%02d", myear, mmonth + 1, mdayOfMonth))
 
-                        }, year, month, day
+                    }, year, month, day
                 )
 
                 datepicker2.show()
