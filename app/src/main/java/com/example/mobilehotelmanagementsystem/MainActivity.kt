@@ -110,7 +110,7 @@ class MainActivity : AppCompatActivity() {
     private fun updateUI(currentUser: FirebaseUser?) {
         if (currentUser != null) {
             if (currentUser.isEmailVerified) {
-                val intent = Intent(this, mainpage::class.java)
+                val intent = Intent(this, staffmaintenance::class.java)
                 intent.putExtra(staffmaintenance.MAIL,et_email.text.toString())
                 startActivity(intent)
                 finish()

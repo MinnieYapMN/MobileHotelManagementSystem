@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -9,44 +8,61 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="40dp"
-        tools:context=".reserve">
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
 
-
+        <EditText
+            android:id="@+id/editTextTextPersonName3"
+            style="al"
+            android:layout_width="414dp"
+            android:layout_height="70dp"
+            android:background="#483A33"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:lineSpacingExtra="8sp"
+            android:text="@string/reservation"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#F7F9FA"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:verticalScrollbarPosition="defaultPosition"
+            tools:layout_editor_absoluteX="-2dp"
+            tools:layout_editor_absoluteY="0dp" />
         <Button
-            android:id="@+id/button26"
+            android:id="@+id/button25"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
-            android:layout_marginLeft="4dp"
-            android:layout_marginTop="4dp"
-            android:text="BACK"
-            app:backgroundTint="#483A33"
+            android:layout_marginEnd="323dp"
+            android:layout_marginRight="323dp"
+            android:onClick="back"
+            android:text="Back"
+            app:backgroundTint="#A88462"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
 
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="300dp"
             android:layout_height="197dp"
-            android:layout_marginStart="4dp"
-            android:layout_marginLeft="4dp"
             android:layout_marginTop="22dp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button26"
+            app:layout_constraintTop_toBottomOf="@+id/button25"
             app:srcCompat="@drawable/logo" />
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="100dp"
-            android:layout_marginLeft="100dp"
             android:layout_marginTop="16dp"
             android:text="RESERVATION"
             android:textColor="#1C1B1B"
             android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
@@ -105,9 +121,9 @@
             android:id="@+id/textView54"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginLeft="56dp"
+            android:layout_marginTop="16dp"
             android:text="Room Information"
             android:textColor="#1C1919"
             android:textSize="18sp"
@@ -172,7 +188,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
-            android:text="Check In Date"
+            android:text="Date"
             android:textColor="#0E0D0D"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
@@ -180,13 +196,30 @@
 
         <EditText
             android:id="@+id/rciDate"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:ems="10"
-            android:hint="dd-mm-yyyy"
-            android:inputType="textPersonName"
+            android:layout_width="136dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="16dp"
+            android:background="#F3EFEF"
+            android:text="Check In Date"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView57" />
+
+
+        <EditText
+            android:id="@+id/rcoDate"
+            android:layout_width="136dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="208dp"
+            android:layout_marginLeft="208dp"
+            android:layout_marginTop="8dp"
+            android:background="#F3EFEF"
+            android:text="Check Out Date"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView57" />
 
@@ -277,7 +310,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/rciDate" />
 
-        <EditText
+        <TextView
             android:id="@+id/rNoDay"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
