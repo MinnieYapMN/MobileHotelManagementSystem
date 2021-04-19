@@ -52,21 +52,23 @@ class staffmaintenance : AppCompatActivity() {
             var StaffName = txtStaffName.text.toString()
             var StaffGender = txtStaffGender.text.toString()
             var StaffBirth = txtStaffBirth.text.toString()
+            var StaffEmail = txtStaffEmail.text.toString()
 
-            updateData(StaffId,StaffName,StaffGender,StaffBirth)
+            updateData(StaffId,StaffName,StaffGender,StaffBirth,StaffEmail)
 
         }
 
     }
 
-    private fun updateData(StaffId: String, StaffName: String, StaffGender : String, StaffBirth: String) {
+    private fun updateData(StaffId: String, StaffName: String, StaffGender : String, StaffBirth: String,StaffEmail:String) {
 
         database = FirebaseDatabase.getInstance().getReference("Staff")
         val Staff = mapOf<String,String>(
-            "staffId" to StaffId,
-            "staffName" to StaffName,
-            "staffGender" to StaffGender,
-            "staffBirth" to StaffBirth
+                "staffId" to StaffId,
+                "staffName" to StaffName,
+                "staffGender" to StaffGender,
+                "staffBirth" to StaffBirth,
+                "staffEmail" to StaffEmail
         )
 
         database.child(StaffId).updateChildren(Staff).addOnSuccessListener {

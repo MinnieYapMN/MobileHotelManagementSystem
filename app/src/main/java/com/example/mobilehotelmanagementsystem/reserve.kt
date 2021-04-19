@@ -24,7 +24,6 @@ class reserve : AppCompatActivity() {
     private lateinit var database: DatabaseReference
     var formatDate = SimpleDateFormat("dd MMMM YYYY", Locale.US)
 
-
     @RequiresApi(Build.VERSION_CODES.O)
     val getDate = Calendar.getInstance()
 
@@ -47,22 +46,21 @@ class reserve : AppCompatActivity() {
 
         rciDate.setOnClickListener {
             val datepicker = DatePickerDialog(
-                this,
-                DatePickerDialog.OnDateSetListener { view, myear, mmonth, mdayOfMonth ->
-                    rciDate.setText(String.format("%02d-%02d-%02d", myear, mmonth + 1, mdayOfMonth))
-                }, year, month, day
+                    this,
+                    DatePickerDialog.OnDateSetListener { view, myear, mmonth, mdayOfMonth ->
+                        rciDate.setText(String.format("%02d-%02d-%02d", myear, mmonth + 1, mdayOfMonth))
+                    }, year, month, day
             )
 
             datepicker.show()
         }
-        rcoDate.setOnClickListener {
+        rcoDate .setOnClickListener {
             val datepicker2 = DatePickerDialog(
-                this,
-                DatePickerDialog.OnDateSetListener { view, myear, mmonth, mdayOfMonth ->
+                    this,
+                    DatePickerDialog.OnDateSetListener { view, myear, mmonth, mdayOfMonth ->
+                        rcoDate.setText(String.format("%02d-%02d-%02d", myear, mmonth + 1, mdayOfMonth))
 
-                    rcoDate.setText(String.format("%02d-%02d-%02d", myear, mmonth + 1, mdayOfMonth))
-
-                }, year, month, day
+                    }, year, month, day
             )
 
             datepicker2.show()
@@ -72,7 +70,7 @@ class reserve : AppCompatActivity() {
             val end = LocalDate.parse(rcoDate.text)
             val night = start.until(end, ChronoUnit.DAYS)
 
-            rNoDay.text = "${night.toString()} day"
+            rNoDay.text = "${night.toString()}"
         }
 
         rDone.setOnClickListener {
@@ -80,14 +78,15 @@ class reserve : AppCompatActivity() {
             var GPhone = rPhone.text.toString()
             var ERoom = rExecutiveRoom.text.toString().toInt()
             var DRoom = rDRoom.text.toString().toInt()
-            var rNoDay = rNoDay.text.toString().trim().toInt()
+            var rciDate = rciDate.text.toString()
+            var rNoDay = rNoDay.text.toString().toInt()
             var NoOfAdult = rNoAdult.text.toString()
             var NoOfChild = rNoChild.text.toString()
             var ERM: Int = 0
             var DRM: Int = 0
             var RoomNo = " "
 
-            if (GName.isNotEmpty() && GPhone.isNotEmpty() ) {
+            if (GName.isNotEmpty() && GPhone.isNotEmpty()) {
                 if (ERoom > 0) {
                     ERM = ERoom * 150
                 } else {
@@ -105,27 +104,12 @@ class reserve : AppCompatActivity() {
                 val total: Int = (ERM + DRM) * rNoDay
 
 
-                roomR.child(GName.toString()).setValue(
-                    Guest(
-                        GName,
-                        GPhone,
-                        ERoom,
-                        DRoom,
-                        rNoDay,
-                        NoOfAdult,
-                        NoOfChild,
-                        ERM,
-                        DRM,
-                        total,
-                        RoomNo
-                    )
-                )
+                roomR.child(GName.toString()).setValue(Guest(GName, GPhone, ERoom, DRoom, rciDate, rNoDay, NoOfAdult, NoOfChild, ERM, DRM, total, RoomNo))
+                Toast.makeText(this, "Updated successful.", Toast.LENGTH_LONG).show()
+
             }
-            Toast.makeText(this, "Updated successful.", Toast.LENGTH_SHORT).show()
         }
     }
-
-
     fun back(view: View) {
         val greeting = "Main Page"
 

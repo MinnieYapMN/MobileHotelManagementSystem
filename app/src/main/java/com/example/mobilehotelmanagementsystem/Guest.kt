@@ -5,7 +5,8 @@ class Guest {
     var GPhone = ""
     var ERoom:Int = 0
     var DRoom:Int = 0
-    var rNoDay:Int = 0
+    var CheckInDate = ""
+    var NoOfDay:Int = 0
     var NoOfAdult = ""
     var NoOfChild = ""
     var ERM: Int =0
@@ -13,13 +14,14 @@ class Guest {
     var total:Int = 0
     var RoomNo = ""
 
-    constructor(GName:String, GPhone:String, ERoom:Int, DRoom:Int, rNoDay: Int, NoOfAdult:String, NoOfChild:String, ERM:Int, DRM:Int, total:Int, RoomNo:String){
+    constructor(GName:String, GPhone:String, ERoom:Int, DRoom:Int, CheckInDate:String, NoOfDay: Int, NoOfAdult:String, NoOfChild:String, ERM:Int, DRM:Int, total:Int, RoomNo:String){
 
         this.GName = GName
         this.GPhone = GPhone
         this.ERoom = ERoom
         this.DRoom = DRoom
-        this.rNoDay = rNoDay
+        this.CheckInDate = CheckInDate
+        this.NoOfDay = NoOfDay
         this.NoOfAdult = NoOfAdult
         this.NoOfChild = NoOfChild
         this.ERM = ERM

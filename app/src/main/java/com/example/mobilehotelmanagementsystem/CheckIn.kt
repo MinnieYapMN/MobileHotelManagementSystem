@@ -36,6 +36,7 @@ class CheckIn : AppCompatActivity() {
                     database.child(name).child("roomNo").setValue(RoomNo)
                     bdatabase.child(RoomNo).child("roomStatus").setValue(status)
                     val greeting = "Back To Main Page"
+                    Toast.makeText(this, "Room inserted successful.", Toast.LENGTH_LONG).show()
                     val intent2 = Intent(this, mainpage::class.java).apply {
                         putExtra(AlarmClock.EXTRA_MESSAGE,greeting)
                     }
@@ -80,7 +81,7 @@ class CheckIn : AppCompatActivity() {
                 val DRoom = it.child("droom").value
                 val NoOfAdult = it.child("noOfAdult").value
                 val NoOfChild = it.child("noOfChild").value
-                Toast.makeText(this,"Guest information got succefully.",Toast.LENGTH_SHORT).show()
+                Toast.makeText(this,"Guest information got successful.",Toast.LENGTH_SHORT).show()
 
 
                 ciPhone.text = GPhone.toString()

@@ -10,7 +10,7 @@ import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.activity_roomdetails.*
 import kotlinx.android.synthetic.main.activity_staffdetails.*
-
+import kotlinx.android.synthetic.main.activity_staffmaintenance.*
 
 
 class staffdetails : AppCompatActivity() {
@@ -56,6 +56,7 @@ class staffdetails : AppCompatActivity() {
             tvName.setText("")
             tvGender.setText("")
             tvBirth.setText("")
+            tvEmail.setText("")
             Toast.makeText(this,"Successfully Deleted",Toast.LENGTH_SHORT).show()
 
         }.addOnFailureListener{
@@ -74,16 +75,22 @@ class staffdetails : AppCompatActivity() {
                 val StaffName = it.child("staffName").value
                 val StaffGender = it.child("staffGender").value
                 val StaffBirth = it.child("staffBirth").value
+                var StaffEmail = it.child("staffEmail").value
+
                 Toast.makeText(this,"Successfully Read",Toast.LENGTH_SHORT).show()
 
                 tvName.text = StaffName.toString()
                 tvGender.text = StaffGender.toString()
                 tvBirth.text = StaffBirth.toString()
+                tvEmail.text = StaffEmail.toString()
 
             }else{
 
                 Toast.makeText(this,"Staff Doesn't Exist",Toast.LENGTH_SHORT).show()
-
+                tvName.setText("")
+                tvGender.setText("")
+                tvBirth.setText("")
+                tvEmail.setText("")
 
             }
 

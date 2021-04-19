@@ -32,6 +32,19 @@
             tools:ignore="MissingConstraints" />
 
         <Button
+            android:id="@+id/coGet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="78dp"
+            android:layout_marginLeft="78dp"
+            android:layout_marginTop="124dp"
+            android:text="@string/get"
+            app:backgroundTint="#A88462"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/roomET"
+            app:layout_constraintTop_toBottomOf="@+id/imageView20" />
+
+        <Button
             android:id="@+id/button20"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -119,7 +132,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/roomET" />
 
-    <EditText
+    <TextView
         android:id="@+id/nameET"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -144,17 +157,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nameET" />
 
-        <TextView
+        <EditText
             android:id="@+id/dateET"
-            android:layout_width="136dp"
-            android:layout_height="39dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginStart="40dp"
             android:layout_marginLeft="40dp"
-            android:layout_marginTop="16dp"
-            android:background="#F3EFEF"
-            android:text="@string/check_out_date"
-            android:textColor="#000000"
-            android:textColorHint="#000000"
+            android:ems="10"
+            android:hint = "dd/mm/yyyy"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView53" />
 

@@ -20,6 +20,7 @@ class Payment : AppCompatActivity() {
     }
     private lateinit var database: DatabaseReference
     private lateinit var pdatabase: DatabaseReference
+    private lateinit var rdatabase: DatabaseReference
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_payment)
@@ -66,6 +67,9 @@ class Payment : AppCompatActivity() {
                 }.addOnFailureListener{
                     Toast.makeText(this,"Failed",Toast.LENGTH_SHORT).show()
                 }
+                var status = "Available"
+                rdatabase = FirebaseDatabase.getInstance().getReference("Room")
+                rdatabase.child(room).child("roomStatus").setValue(status)
             }else{
                 Toast.makeText(this,"Room doesn't have any services",Toast.LENGTH_SHORT).show()
             }
