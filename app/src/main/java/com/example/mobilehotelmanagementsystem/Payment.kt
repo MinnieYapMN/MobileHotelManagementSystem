@@ -45,24 +45,29 @@ class Payment : AppCompatActivity() {
     private fun readServices(name: String,room: String) {
         pdatabase = FirebaseDatabase.getInstance().getReference("RoomReserve")
         database = FirebaseDatabase.getInstance().getReference("RoomService")
-        database.child(room).get().addOnSuccessListener {
+        pdatabase.child(name).get().addOnSuccessListener {
             if(it.exists()){
-                val serCharge = it.child("serCharge").value
-                val serCharge1:Int = serCharge.toString().toInt()
+                val rCharge = it.child("total").value
+                val rCharge1:Int = rCharge.toString().toInt()
                 Toast.makeText(this,"Successfully read!",Toast.LENGTH_SHORT).show()
-                val resultSerCharge = findViewById<TextView>(R.id.tvSerCharge)
-                resultSerCharge.text = ""+ serCharge1
 
-                pdatabase.child(name).get().addOnSuccessListener {
+                database.child(room).get().addOnSuccessListener {
                     if(it.exists()){
-                        val rtotal = it.child("total").value
-                        val rtotal1:Int = rtotal.toString().toInt()
+                        val sCharge = it.child("serCharge").value
+                        val sCharge1:Int = sCharge.toString().toInt()
                         Toast.makeText(this,"Successfully read!",Toast.LENGTH_SHORT).show()
+                        val resultSerCharge = findViewById<TextView>(R.id.tvSerCharge)
+                        resultSerCharge.text = ""+ sCharge1
                         val resultTotal = findViewById<TextView>(R.id.tvPayment)
-                        val total: Int =  serCharge1 + rtotal1
+                        val total: Int =  sCharge1 + rCharge1
                         resultTotal.text = total.toString()
                     }else{
                         Toast.makeText(this,"Room doesn't have any services",Toast.LENGTH_SHORT).show()
+                        val resultSerCharge = findViewById<TextView>(R.id.tvSerCharge)
+                        resultSerCharge.text = ""+ 0
+                        val resultTotal = findViewById<TextView>(R.id.tvPayment)
+                        val total: Int = rCharge1
+                        resultTotal.text = total.toString()
                     }
                 }.addOnFailureListener{
                     Toast.makeText(this,"Failed",Toast.LENGTH_SHORT).show()
@@ -71,7 +76,7 @@ class Payment : AppCompatActivity() {
                 rdatabase = FirebaseDatabase.getInstance().getReference("Room")
                 rdatabase.child(room).child("roomStatus").setValue(status)
             }else{
-                Toast.makeText(this,"Room doesn't have any services",Toast.LENGTH_SHORT).show()
+                Toast.makeText(this,"Don't have this guest",Toast.LENGTH_SHORT).show()
             }
         }.addOnFailureListener{
             Toast.makeText(this,"Failed",Toast.LENGTH_SHORT).show()

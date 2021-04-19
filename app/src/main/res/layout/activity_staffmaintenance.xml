@@ -46,14 +46,14 @@
 
         <Button
             android:id="@+id/buttonSShow"
-            android:layout_width="120dp"
+            android:layout_width="123dp"
             android:layout_height="49dp"
             android:layout_marginStart="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="24dp"
             android:onClick="SShow"
             android:shadowColor="#FFFFFF"
-            android:text="Show"
+            android:text="Search"
             android:textAllCaps="true"
             android:textColor="#FFFFFF"
             android:textSize="20sp"
@@ -157,13 +157,14 @@
             android:layout_marginTop="4dp"
             android:fontFamily="sans-serif"
             android:lineSpacingExtra="10sp"
-            android:text="Staff Details"
+            android:text="Staff Profile"
             android:textAllCaps="true"
             android:textColor="#100F0F"
             android:textSize="24sp"
             android:textStyle="bold"
             android:typeface="serif"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView6" />
 

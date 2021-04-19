@@ -62,9 +62,9 @@ class SignUp : AppCompatActivity() {
             }
     }
     fun exit(view: View) {
-        val greeting = "Main Page"
+        val greeting = "Login Page"
 
-        val intent = Intent(this, mainpage::class.java).apply {
+        val intent = Intent(this, MainActivity::class.java).apply {
             putExtra(AlarmClock.EXTRA_MESSAGE, greeting)
         }
         startActivity(intent)

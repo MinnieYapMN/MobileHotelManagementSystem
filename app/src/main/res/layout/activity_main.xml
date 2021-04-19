@@ -97,15 +97,15 @@
         android:layout_height="40dp"
         android:layout_marginTop="10dp"
         android:text="@string/don_t_have_account"
-        app:icon="@drawable/account"
-        app:iconSize="30dp"
         app:backgroundTint="#A88462"
+        app:icon="@drawable/account"
+        app:iconSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_Login"
-        app:layout_constraintVertical_bias="0.092" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/btn_forgotPass"

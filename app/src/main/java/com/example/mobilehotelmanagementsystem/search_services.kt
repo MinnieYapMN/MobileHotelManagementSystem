@@ -45,7 +45,7 @@ class search_services : AppCompatActivity() {
                     val laundry = it.child("laundry").value
                     val laundry1:Int = laundry.toString().toInt()
                     Toast.makeText(this,"Successfully read!",Toast.LENGTH_SHORT).show()
-                    textRoom.text.clear()
+
                     if(housekeep1 > 0){
                         tvhk.text = "Yes"
                     }else{
@@ -79,9 +79,9 @@ class search_services : AppCompatActivity() {
     }
 
     fun back(view: View) {
-        val greeting = "Main Page"
+        val greeting = "Room Services Page"
 
-        val intent = Intent(this, mainpage::class.java).apply {
+        val intent = Intent(this, roomservices::class.java).apply {
             putExtra(AlarmClock.EXTRA_MESSAGE, greeting)
         }
         startActivity(intent)

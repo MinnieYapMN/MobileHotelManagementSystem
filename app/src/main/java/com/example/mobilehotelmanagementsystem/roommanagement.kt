@@ -97,4 +97,15 @@ class roommanagement : AppCompatActivity() {
         }
         startActivity(intent)
     }
+
+    fun RDS(view: View) {
+        val greeting = "SHOW ROOM"
+
+        val intent = Intent(this, showr::class.java).apply {
+            putExtra(AlarmClock.EXTRA_MESSAGE, greeting)
+        }
+        startActivity(intent)
+    }
+
+
 }

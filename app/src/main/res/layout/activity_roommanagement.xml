@@ -42,6 +42,42 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName10" />
 
+        <Button
+            android:id="@+id/buttonRDS"
+            android:layout_width="142dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:onClick="RDS"
+            android:shadowColor="#FFFFFF"
+            android:text="DISPLAY"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:backgroundTint="#A88462"
+            app:layout_constraintEnd_toStartOf="@+id/buttonRUpdate"
+            app:layout_constraintStart_toEndOf="@+id/buttonRAdd"
+            app:layout_constraintTop_toBottomOf="@+id/txtRoomStatus" />
+
+        <Button
+            android:id="@+id/buttonRShow"
+            android:layout_width="123dp"
+            android:layout_height="49dp"
+            android:onClick="RShow"
+            android:shadowColor="#FFFFFF"
+            android:text="SEARCH"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:backgroundTint="#A88462"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName10" />
+
         <EditText
             android:id="@+id/editTextTextPersonName10"
             style="al"
@@ -59,32 +95,14 @@
             android:typeface="serif"
             android:verticalScrollbarPosition="defaultPosition"
             tools:layout_editor_absoluteX="-2dp"
-            tools:layout_editor_absoluteY="0dp" />
+            tools:layout_editor_absoluteY="0dp"
+            tools:ignore="MissingConstraints" />
 
-        <Button
-            android:id="@+id/buttonRShow"
-            android:layout_width="120dp"
-            android:layout_height="49dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="22dp"
-            android:onClick="RShow"
-            android:shadowColor="#FFFFFF"
-            android:text="Show"
-            android:textAllCaps="true"
-            android:textColor="#FFFFFF"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:backgroundTint="#A88462"
-            app:layout_constraintStart_toEndOf="@+id/buttonRAdd"
-            app:layout_constraintTop_toBottomOf="@+id/txtRoomStatus" />
 
         <Button
             android:id="@+id/buttonRUpdate"
             android:layout_width="120dp"
             android:layout_height="49dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginLeft="20dp"
             android:layout_marginTop="22dp"
             android:layout_marginEnd="10dp"
             android:layout_marginRight="10dp"
@@ -96,7 +114,6 @@
             android:textStyle="bold"
             app:backgroundTint="#A88462"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/buttonRShow"
             app:layout_constraintTop_toBottomOf="@+id/txtRoomStatus" />
 
         <Button
@@ -120,6 +137,8 @@
             android:id="@+id/textView11"
             android:layout_width="128dp"
             android:layout_height="43dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
             android:layout_marginTop="40dp"
             android:fontFamily="sans-serif"
             android:lineSpacingExtra="8sp"
@@ -129,21 +148,21 @@
             android:textSize="23sp"
             android:textStyle="bold"
             android:typeface="serif"
-            app:layout_constraintTop_toBottomOf="@+id/textView12"
-            tools:layout_editor_absoluteX="15dp" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
         <TextView
             android:id="@+id/textView12"
-            android:layout_width="178dp"
-            android:layout_height="41dp"
-            android:layout_marginStart="115dp"
-            android:layout_marginLeft="115dp"
+            android:layout_width="152dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="118dp"
+            android:layout_marginLeft="118dp"
             android:layout_marginTop="19dp"
             android:layout_marginEnd="118dp"
             android:layout_marginRight="118dp"
             android:fontFamily="sans-serif"
             android:lineSpacingExtra="10sp"
-            android:text="Room Details"
+            android:text="Room added"
             android:textAllCaps="true"
             android:textColor="#100F0F"
             android:textSize="24sp"
@@ -157,9 +176,9 @@
             android:id="@+id/textView13"
             android:layout_width="144dp"
             android:layout_height="38dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginEnd="14dp"
-            android:layout_marginRight="14dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="28dp"
             android:fontFamily="sans-serif"
             android:lineSpacingExtra="8sp"
             android:text="Room Price:"
@@ -168,7 +187,7 @@
             android:textSize="23sp"
             android:textStyle="bold"
             android:typeface="serif"
-            app:layout_constraintEnd_toStartOf="@+id/txtRoomPrice"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvSerCharge" />
 
         <TextView
@@ -196,7 +215,9 @@
             android:id="@+id/tvPayment"
             android:layout_width="153dp"
             android:layout_height="39dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="28dp"
             android:background="#00FDFAFA"
             android:fontFamily="sans-serif"
             android:lineSpacingExtra="8sp"
@@ -206,18 +227,16 @@
             android:textSize="23sp"
             android:textStyle="bold"
             android:typeface="serif"
-            app:layout_constraintTop_toBottomOf="@+id/textView13"
-            tools:layout_editor_absoluteX="10dp" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
         <EditText
             android:id="@+id/txtRoomId"
             android:layout_width="208dp"
             android:layout_height="42dp"
-            android:layout_marginStart="29dp"
-            android:layout_marginLeft="29dp"
             android:layout_marginTop="40dp"
-            android:layout_marginEnd="31dp"
-            android:layout_marginRight="31dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
             android:background="#F8F3F3"
             android:ems="10"
             android:inputType="textPersonName"
@@ -225,8 +244,6 @@
             android:textColor="#0B0A0A"
             android:textColorLink="#0F0F10"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/textView11"
             app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
         <EditText
@@ -249,9 +266,7 @@
             android:id="@+id/txtRoomType"
             android:layout_width="208dp"
             android:layout_height="42dp"
-            android:layout_marginStart="3dp"
-            android:layout_marginLeft="3dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="28dp"
             android:layout_marginEnd="30dp"
             android:layout_marginRight="30dp"
             android:background="#F8F3F3"
@@ -261,17 +276,13 @@
             android:textColor="#0B0A0A"
             android:textColorLink="#0F0F10"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/tvSerCharge"
             app:layout_constraintTop_toBottomOf="@+id/txtRoomId" />
 
         <EditText
             android:id="@+id/txtRoomStatus"
             android:layout_width="208dp"
             android:layout_height="42dp"
-            android:layout_marginStart="12dp"
-            android:layout_marginLeft="12dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="28dp"
             android:layout_marginEnd="30dp"
             android:layout_marginRight="30dp"
             android:background="#F8F3F3"
@@ -281,8 +292,6 @@
             android:textColor="#0B0A0A"
             android:textColorLink="#0F0F10"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/tvPayment"
             app:layout_constraintTop_toBottomOf="@+id/txtRoomPrice" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

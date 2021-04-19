@@ -106,12 +106,13 @@
         android:textColor="#393535"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView49" />
+        app:layout_constraintTop_toBottomOf="@+id/nameET" />
 
-    <EditText
+    <TextView
         android:id="@+id/roomET"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
+        android:textStyle="bold"
         android:layout_marginStart="40dp"
         android:layout_marginLeft="40dp"
         android:ems="10"
@@ -130,9 +131,9 @@
         android:textColor="#020202"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/roomET" />
+        app:layout_constraintTop_toBottomOf="@+id/textView49" />
 
-    <TextView
+    <EditText
         android:id="@+id/nameET"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -155,7 +156,7 @@
         android:textIsSelectable="false"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nameET" />
+        app:layout_constraintTop_toBottomOf="@+id/roomET" />
 
         <EditText
             android:id="@+id/dateET"

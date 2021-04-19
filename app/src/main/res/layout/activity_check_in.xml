@@ -99,7 +99,8 @@
         <EditText
             android:id="@+id/ciName"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
+            android:textStyle="bold"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
             android:ems="10"
@@ -142,6 +143,7 @@
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
             android:text="@string/executive_room"
+            android:ems="10"
             android:textColor="#2B2626"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
@@ -155,6 +157,7 @@
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
             android:text="@string/deluxe_room"
+            android:ems="10"
             android:textColor="#171515"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
@@ -213,10 +216,12 @@
         <TextView
             android:id="@+id/ciPhone"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
+            android:textStyle="bold"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
             android:textColor="#131212"
+            android:ems="10"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView28" />
@@ -224,10 +229,12 @@
         <TextView
             android:id="@+id/ciERoom"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
+            android:textStyle="bold"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
             android:textColor="#2B2626"
+            android:ems="10"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView30" />
@@ -235,10 +242,12 @@
         <TextView
             android:id="@+id/ciDRoom"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
+            android:textStyle="bold"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
-            android:textColor="#514141"
+            android:ems="10"
+            android:textColor="#2B2626"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView31" />
@@ -246,9 +255,11 @@
         <TextView
             android:id="@+id/ciNoAdult"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
+            android:textStyle="bold"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
+            android:ems="10"
             android:textColor="#433939"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
@@ -257,11 +268,13 @@
         <TextView
             android:id="@+id/ciNoChildren"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
+            android:textStyle="bold"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
             android:textColor="#4A3C3C"
             android:textSize="18sp"
+            android:ems="10"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView33" />
 
@@ -281,7 +294,8 @@
         <EditText
             android:id="@+id/ciRno"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
+            android:textStyle="bold"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
             android:ems="10"

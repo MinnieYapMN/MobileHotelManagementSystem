@@ -11,7 +11,7 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="back1">Back</string>
     <string name="search_service">Search Service</string>
-    <string name="search">Search</string>
+    <string name="search1">Search</string>
     <string name="sign_up_page">Sign Up Page</string>
     <string name="room_services_page">Room Services Page</string>
     <string name="check_out">Check-Out</string>
@@ -54,4 +54,14 @@
     <string name="textview">TextView</string>
     <string name="payment_page1">Payment Page</string>
     <string name="payment_page">Payment Page</string>
+    <string name="housekeeping">Housekeeping</string>
+    <string name="room_no1">Room No :</string>
+    <string name="spa_services">SPA Services</string>
+    <string name="breakfast">Breakfast</string>
+    <string name="dry_cleaning_and_laundry">Dry cleaning and laundry</string>
+    <string name="search">Search</string>
+    <string name="confirm">Confirm</string>
+    <string name="back4">Back</string>
+    <string name="room_details1">Room Details</string>
+    <string name="room_details">Room Details</string>
 </resources>

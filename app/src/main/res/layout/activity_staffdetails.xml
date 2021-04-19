@@ -104,7 +104,7 @@
             android:layout_marginEnd="29dp"
             android:layout_marginRight="29dp"
             android:backgroundTint="@color/teal_200"
-            android:text="Show"
+            android:text="Search"
             android:textSize="18sp"
             app:layout_constraintEnd_toStartOf="@+id/sdeletedataBtn"
             app:layout_constraintStart_toStartOf="parent"

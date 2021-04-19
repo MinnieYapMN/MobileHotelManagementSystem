@@ -9,7 +9,9 @@ import android.widget.Button
 import android.widget.Toast
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
+import kotlinx.android.synthetic.main.activity_check_in.*
 import kotlinx.android.synthetic.main.activity_check_out.*
+import kotlinx.android.synthetic.main.activity_roomdetails.*
 
 class CheckOut : AppCompatActivity() {
     private lateinit var database: DatabaseReference
@@ -22,16 +24,16 @@ class CheckOut : AppCompatActivity() {
         val submitBtn = findViewById<Button>(R.id.submitBtn)
 
         coGet.setOnClickListener {
-            val room: String = roomET.text.toString()
+            val name: String = nameET.text.toString()
 
-            if (room.isNotEmpty()){
-                getData(room)
+            if  (name.isNotEmpty()){
 
-                var RoomNo = roomET.text.toString()
-                bdatabase = FirebaseDatabase.getInstance().getReference("Room")
-            }
-            else{
-                Toast.makeText(this,"Please enter the room no.", Toast.LENGTH_SHORT).show()
+                getData(name)
+
+            }else{
+
+                Toast.makeText(this,"PLease enter the name", Toast.LENGTH_SHORT).show()
+
             }
         }
 
@@ -69,9 +71,10 @@ class CheckOut : AppCompatActivity() {
 
             if (it.exists()){
 
-                val GName = it.child("gname").value
+                val RoomNo = it.child("roomNo").value
+                roomET.text = RoomNo.toString()
                 Toast.makeText(this,"Guest information got successful.",Toast.LENGTH_SHORT).show()
-                nameET.text = GName.toString()
+
 
             }else{
 
