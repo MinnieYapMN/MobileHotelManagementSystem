@@ -80,8 +80,9 @@ class reserve : AppCompatActivity() {
             var GPhone = rPhone.text.toString()
             var ERoom = rExecutiveRoom.text.toString().toInt()
             var DRoom = rDRoom.text.toString().toInt()
-            var rciDate = rciDate.toString()
-            var rNoDay = rNoDay.toString().toInt()
+            var rciDate = rciDate.text.toString()
+            var rcoDate = rcoDate.text.toString()
+            var rNoDay = rNoDay.text.toString().toInt()
             var NoOfAdult = rNoAdult.text.toString()
             var NoOfChild = rNoChild.text.toString()
             var ERM: Int = 0
@@ -106,7 +107,7 @@ class reserve : AppCompatActivity() {
             val total:Int = (ERM + DRM) * rNoDay
 
 
-            roomR.child(GName.toString()).setValue(Guest(GName,GPhone,ERoom,DRoom, rciDate,rNoDay, NoOfAdult,NoOfChild,ERM,DRM, total, RoomNo))
+            roomR.child(GName.toString()).setValue(Guest(GName,GPhone,ERoom,DRoom, rciDate,rcoDate,rNoDay, NoOfAdult,NoOfChild,ERM,DRM, total, RoomNo))
             Toast.makeText(this, "Updated successful.", Toast.LENGTH_LONG).show()
 
         }
