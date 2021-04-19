@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -9,30 +8,51 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="40dp"
+        android:layout_height="match_parent"
         tools:context=".CheckIn">
+
+        <EditText
+            android:id="@+id/editTextTextPersonName3"
+            style="al"
+            android:layout_width="414dp"
+            android:layout_height="70dp"
+            android:background="#483A33"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:lineSpacingExtra="8sp"
+            android:text="@string/check_in_page"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#F7F9FA"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:verticalScrollbarPosition="defaultPosition"
+            tools:layout_editor_absoluteX="-2dp"
+            tools:layout_editor_absoluteY="0dp"
+            tools:ignore="MissingConstraints" />
 
         <Button
             android:id="@+id/button10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
-            android:layout_marginLeft="4dp"
-            android:layout_marginTop="4dp"
+            android:layout_marginEnd="323dp"
+            android:layout_marginRight="323dp"
             android:onClick="back"
             android:text="@string/back"
-            app:backgroundTint="#483A33"
+            app:backgroundTint="#A88462"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
+
 
         <ImageView
             android:id="@+id/imageView4"
             android:layout_width="300dp"
             android:layout_height="197dp"
-            android:layout_marginStart="4dp"
-            android:layout_marginLeft="4dp"
             android:layout_marginTop="22dp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button10"
             app:srcCompat="@drawable/logo" />
@@ -41,12 +61,11 @@
             android:id="@+id/textView16"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="108dp"
-            android:layout_marginLeft="108dp"
             android:layout_marginTop="16dp"
             android:text="CHECK IN"
             android:textColor="#252525"
             android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
@@ -171,25 +190,24 @@
             android:id="@+id/ciGet"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="225dp"
-            android:layout_marginLeft="225dp"
-            android:layout_marginTop="650dp"
+            android:layout_marginStart="78dp"
+            android:layout_marginLeft="78dp"
+            android:layout_marginTop="124dp"
             android:text="@string/get"
-            app:backgroundTint="#483A33"
-            app:layout_constraintStart_toStartOf="parent"
+            app:backgroundTint="#A88462"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ciName"
             app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
         <Button
             android:id="@+id/CISubmit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="225dp"
-            android:layout_marginLeft="225dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="428dp"
             android:onClick="submit"
             android:text="@string/submit"
-            app:backgroundTint="#483A33"
-            app:layout_constraintStart_toStartOf="parent"
+            app:backgroundTint="#A88462"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ciGet" />
 
         <TextView

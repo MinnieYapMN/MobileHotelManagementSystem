@@ -114,7 +114,7 @@ class MainActivity : AppCompatActivity() {
                 intent.putExtra(staffmaintenance.MAIL,et_email.text.toString())
                 startActivity(intent)
                 finish()
-                Toast.makeText(baseContext, "Login Successful.", Toast.LENGTH_SHORT)
+                Toast.makeText(baseContext, "Login Successful. Remember to fill in your details", Toast.LENGTH_SHORT)
                     .show()
             } else {
                 Toast.makeText(baseContext, "Please verify your email address.", Toast.LENGTH_SHORT)

@@ -21,7 +21,7 @@
     <string name="staff_maintenance">Staff Maintenance</string>
     <string name="room_services">Room Services</string>
     <string name="room_reservation">Room Reservation</string>
-    <string name="back">Back</string>
+    <string name="back3">Back</string>
     <string name="payment1">Payment</string>
     <string name="customer_service_charge">Customer Service Charge</string>
     <string name="payment">Payment</string>
@@ -38,4 +38,20 @@
     <string name="phone_number">Phone Number :</string>
     <string name="back2">BACK</string>
     <string name="reservation">Reservation</string>
+    <string name="back">Back</string>
+    <string name="check_in_page">Check In Page</string>
+    <string name="check_out_page">check_Out_page</string>
+    <string name="submit1">Submit</string>
+    <string name="check_out_date1">Check Out Date</string>
+    <string name="password">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="email">Email</string>
+    <string name="don_t_have_account">Don\'t have Account?</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="login_page">Login Page</string>
+    <string name="no_of_days">No. of days</string>
+    <string name="reservation_page">Reservation Page</string>
+    <string name="textview">TextView</string>
+    <string name="payment_page1">Payment Page</string>
+    <string name="payment_page">Payment Page</string>
 </resources>

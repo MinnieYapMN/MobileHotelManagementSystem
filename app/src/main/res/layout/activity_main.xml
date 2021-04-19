@@ -6,11 +6,9 @@
     android:layout_height="match_parent"
     android:layout_width="match_parent">
 
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".MainActivity">
 
     <EditText
@@ -22,7 +20,8 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:lineSpacingExtra="8sp"
-        android:text="               Login Page"
+        android:text="@string/login_page"
+        android:gravity="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#F7F9FA"
         android:textSize="30sp"
@@ -52,7 +51,7 @@
         android:layout_marginTop="20dp"
         android:ems="10"
         android:fontFamily="monospace"
-        android:hint="Email"
+        android:hint="@string/email"
         android:inputType="text"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -71,7 +70,7 @@
         android:layout_marginRight="75dp"
         android:ems="10"
         android:fontFamily="monospace"
-        android:hint="Password"
+        android:hint="@string/password"
         android:inputType="textPassword"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -83,7 +82,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="LOGIN"
+        android:text="@string/login"
         app:icon="@drawable/login"
         app:iconSize="30dp"
         app:backgroundTint="#A88462"
@@ -97,7 +96,7 @@
         android:layout_width="308dp"
         android:layout_height="40dp"
         android:layout_marginTop="10dp"
-        android:text="Don't have Account?"
+        android:text="@string/don_t_have_account"
         app:icon="@drawable/account"
         app:iconSize="30dp"
         app:backgroundTint="#A88462"
@@ -118,7 +117,7 @@
         android:layout_marginTop="1dp"
         android:layout_marginEnd="5dp"
         android:layout_marginRight="5dp"
-        android:text="Forgot Password"
+        android:text="@string/forgot_password"
         android:textAllCaps="false"
         android:textColor="#050505"
         android:textSize="10sp"

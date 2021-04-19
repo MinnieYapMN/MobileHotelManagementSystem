@@ -7,46 +7,66 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".CheckOut">
-
-    <Button
-        android:id="@+id/button23"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="18dp"
-        android:onClick="back"
-        android:text="BACK"
-        app:backgroundTint="#483A33"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:context=".CheckIn">
 
-    <ImageView
-        android:id="@+id/imageView20"
-        android:layout_width="326dp"
-        android:layout_height="197dp"
-        android:layout_marginTop="64dp"
-        android:layout_marginBottom="5dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo" />
+        <EditText
+            android:id="@+id/editTextTextPersonName3"
+            style="al"
+            android:layout_width="414dp"
+            android:layout_height="70dp"
+            android:background="#483A33"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:lineSpacingExtra="8sp"
+            android:text="Check-Out Page"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#F7F9FA"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:verticalScrollbarPosition="defaultPosition"
+            tools:layout_editor_absoluteX="-2dp"
+            tools:layout_editor_absoluteY="0dp"
+            tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:id="@+id/textView48"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="133dp"
-        android:layout_marginLeft="133dp"
-        android:layout_marginTop="14dp"
-        android:text="CHECK OUT"
-        android:textColor="#1C1A1A"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView20" />
+        <Button
+            android:id="@+id/button20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="323dp"
+            android:layout_marginRight="323dp"
+            android:onClick="back"
+            android:text="@string/back"
+            app:backgroundTint="#A88462"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
+
+
+        <ImageView
+            android:id="@+id/imageView20"
+            android:layout_width="300dp"
+            android:layout_height="197dp"
+            android:layout_marginTop="22dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button20"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textView48"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="CHECK OUT"
+            android:textColor="#1C1A1A"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView20" />
 
     <TextView
         android:id="@+id/textView49"
@@ -132,7 +152,7 @@
             android:layout_marginLeft="40dp"
             android:layout_marginTop="16dp"
             android:background="#F3EFEF"
-            android:text="Check Out Date"
+            android:text="@string/check_out_date"
             android:textColor="#000000"
             android:textColorHint="#000000"
             app:layout_constraintStart_toStartOf="parent"
@@ -146,8 +166,8 @@
         android:layout_marginStart="292dp"
         android:layout_marginLeft="292dp"
         android:layout_marginTop="388dp"
-        android:text="Submit"
-        app:backgroundTint="#483A33"
+        android:text="@string/submit1"
+        app:backgroundTint="#A88462"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView20" />
 
